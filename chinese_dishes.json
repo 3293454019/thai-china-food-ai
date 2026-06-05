@@ -190,6 +190,70 @@
           "dinner": [{"name": "杂酱面+西瓜", "cal": 325, "protein": 9.1, "origin": "家常面食", "suitable": "一般人群", "taboo": "小麦过敏者慎食"}],
           "tip": "肉夹馍搭配豆浆，营养更均衡"
         }
+      ],
+      "酸辣": [
+        {
+          "breakfast": [{"name": "酸辣粉", "cal": 280, "protein": 6.8, "origin": "川渝特色小吃，酸辣开胃", "suitable": "喜欢酸辣的人群", "taboo": "肠胃疾病患者慎食"}],
+          "lunch": [{"name": "酸辣肥牛饭+冰红茶", "cal": 430, "protein": 21.5, "origin": "日式改良快餐", "suitable": "食欲不振者", "taboo": "牛肉过敏者慎食"}],
+          "dinner": [{"name": "酸辣土豆丝盖浇饭+梨", "cal": 360, "protein": 8.9, "origin": "国民快餐", "suitable": "一般人群", "taboo": "无特殊忌口"}],
+          "tip": "酸辣菜品刺激肠胃，不宜过量食用"
+        }
+      ],
+      "重辣": [
+        {
+          "breakfast": [{"name": "重庆小面", "cal": 245, "protein": 7.9, "origin": "重庆特色面食，红油重辣", "suitable": "喜欢重辣的人群", "taboo": "肠胃疾病患者、孕妇慎食"}],
+          "lunch": [{"name": "麻辣香锅饭+雪碧", "cal": 450, "protein": 22.3, "origin": "川式快餐，麻辣过瘾", "suitable": "喜欢重辣的人群", "taboo": "肠胃疾病患者慎食"}],
+          "dinner": [{"name": "辣子鸡盖浇饭+西瓜", "cal": 420, "protein": 26.5, "origin": "重庆江湖菜", "suitable": "喜欢重辣的人群", "taboo": "鸡肉过敏者、肠胃疾病患者慎食"}],
+          "tip": "重辣菜品刺激性强，肠胃弱者请勿尝试"
+        }
+      ]
+    },
+    "过敏体质": {
+      "清淡": [
+        {
+          "breakfast": [{"name": "白粥+茶叶蛋", "cal": 210, "protein": 10.3, "origin": "传统便携早餐，低敏", "suitable": "过敏体质", "taboo": "鸡蛋过敏者禁食"}],
+          "lunch": [{"name": "叉烧饭+矿泉水", "cal": 420, "protein": 18.7, "origin": "粤式快餐，成分简单", "suitable": "过敏体质", "taboo": "猪肉过敏者慎食"}],
+          "dinner": [{"name": "白切鸡饭+香蕉", "cal": 390, "protein": 30.6, "origin": "清淡快餐，无复杂调料", "suitable": "过敏体质", "taboo": "鸡肉过敏者禁食"}],
+          "tip": "选择连锁餐厅，避免路边摊，主动告知服务员过敏情况"
+        },
+        {
+          "breakfast": [{"name": "小米粥+白煮蛋", "cal": 220, "protein": 10.5, "origin": "低敏便携早餐", "suitable": "过敏体质", "taboo": "鸡蛋过敏者禁食"}],
+          "lunch": [{"name": "清炒里脊盖浇饭+矿泉水", "cal": 380, "protein": 22.5, "origin": "低敏快餐，无海鲜坚果", "suitable": "过敏体质", "taboo": "猪肉过敏者禁食"}],
+          "dinner": [{"name": "土豆丝盖浇饭+苹果", "cal": 320, "protein": 4.5, "origin": "清淡快餐", "suitable": "过敏体质", "taboo": "无特殊忌口"}],
+          "tip": "避免食用加工食品，优先选择新鲜食材"
+        }
+      ]
+    },
+    "减脂人群": {
+      "清淡": [
+        {
+          "breakfast": [{"name": "无糖酸奶+燕麦片", "cal": 190, "protein": 11.2, "origin": "减脂便携早餐", "suitable": "减脂人群", "taboo": "牛奶过敏者禁食"}],
+          "lunch": [{"name": "鸡胸肉沙拉+糙米饭", "cal": 320, "protein": 28.5, "origin": "减脂沙拉餐，低卡高蛋白", "suitable": "减脂人群", "taboo": "鸡肉过敏者禁食"}],
+          "dinner": [{"name": "蔬菜卷+无糖豆浆", "cal": 210, "protein": 9.8, "origin": "低卡便携餐", "suitable": "减脂人群", "taboo": "大豆过敏者慎食"}],
+          "tip": "避免奶茶、油炸食品，选择无糖饮品"
+        },
+        {
+          "breakfast": [{"name": "全麦面包+水煮蛋", "cal": 210, "protein": 10.8, "origin": "减脂便携早餐", "suitable": "减脂人群", "taboo": "小麦、鸡蛋过敏者慎食"}],
+          "lunch": [{"name": "水煮虾+糙米饭", "cal": 280, "protein": 25.8, "origin": "高蛋白低卡", "suitable": "减脂人群", "taboo": "海鲜过敏者禁食"}],
+          "dinner": [{"name": "凉拌黄瓜+玉米", "cal": 95, "protein": 4.2, "origin": "低卡晚餐", "suitable": "减脂人群", "taboo": "无特殊忌口"}],
+          "tip": "多喝水，少吃精制碳水"
+        }
+      ]
+    },
+    "老人儿童": {
+      "清淡": [
+        {
+          "breakfast": [{"name": "牛奶+蒸蛋糕", "cal": 250, "protein": 7.8, "origin": "温和早餐，松软易消化", "suitable": "老人、儿童", "taboo": "牛奶、小麦过敏者慎食"}],
+          "lunch": [{"name": "儿童套餐（蒸蛋+米饭+青菜）", "cal": 320, "protein": 12.5, "origin": "儿童专属餐，营养均衡", "suitable": "儿童", "taboo": "鸡蛋过敏者禁食"}],
+          "dinner": [{"name": "粥品+小包子", "cal": 280, "protein": 6.2, "origin": "易消化晚餐", "suitable": "老人、儿童", "taboo": "小麦过敏者慎食"}],
+          "tip": "出行携带保温杯，避免吃太烫或太冰的食物"
+        },
+        {
+          "breakfast": [{"name": "小米粥+小馒头", "cal": 210, "protein": 4.5, "origin": "温和早餐", "suitable": "老人、儿童", "taboo": "小麦过敏者慎食"}],
+          "lunch": [{"name": "番茄鸡蛋盖浇饭+香蕉", "cal": 350, "protein": 13.0, "origin": "清淡快餐", "suitable": "老人、儿童", "taboo": "鸡蛋过敏者禁食"}],
+          "dinner": [{"name": "白粥+蒸蛋", "cal": 180, "protein": 8.2, "origin": "易消化晚餐", "suitable": "老人、儿童", "taboo": "鸡蛋过敏者禁食"}],
+          "tip": "食物切小块，细嚼慢咽"
+        }
       ]
     }
   }
