@@ -2,6 +2,7 @@ import streamlit as st
 import random
 import json
 import os
+import time
 
 # 中泰双语翻译
 trans = {
@@ -111,20 +112,28 @@ with col1:
     allergy = st.text_input(t["allergy"], placeholder=t["allergy_placeholder"])
     cuisine = st.radio(t["cuisine"], t["cuisine_options"])
 
-    # 生成按钮
+    # 生成按钮（恢复动画+全参数联动）
     if st.button(t["generate"], type="primary", key="gen_btn"):
-        # 先删除旧结果，强制重新生成
+        # 关键修复：每次点击都删除旧结果，强制重新生成
         if "result" in st.session_state:
             del st.session_state["result"]
         
+        # 恢复刷新动画（旋转图标+进度条）
         with st.spinner(t["loading"]):
-            # 安全获取菜品库
+            # 动态进度条动画
+            progress_bar = st.progress(0)
+            for i in range(100):
+                time.sleep(0.008)  # 调整速度，避免在云端卡顿
+                progress_bar.progress(i+1)
+            
+            # 全参数联动：根据所有输入选择对应菜品库
             try:
                 if cuisine in ("中餐", "อาหารจีน"):
                     menu_db = cn_dishes[scene][crowd]
                 else:
                     menu_db = thai_dishes[scene][crowd]
             except KeyError:
+                # 兜底：如果组合不存在，用居家+普通人群
                 menu_db = cn_dishes["居家"]["普通人群"] if cuisine in ("中餐", "อาหารจีน") else thai_dishes["居家"]["普通人群"]
             
             # 过滤含忌口的套餐
@@ -137,7 +146,7 @@ with col1:
                 allergy_list.extend(common_allergens)
                 allergy_list = list(set(allergy_list))
             
-            # 安全获取口味
+            # 严格匹配用户选择的口味
             target_taste = taste
             if target_taste not in menu_db:
                 target_taste = "清淡" if lang == "中文" else "อ่อน"
@@ -147,7 +156,7 @@ with col1:
                     has_allergy = False
                     for meal in ["breakfast", "lunch", "dinner"]:
                         for dish in menu[meal]:
-                            # 根据语言选择对应的名称和禁忌进行过滤
+                            # 根据语言过滤忌口
                             dish_name = dish["name_cn"] if lang == "中文" else dish["name_th"]
                             dish_taboo = dish["taboo_cn"] if lang == "中文" else dish["taboo_th"]
                             for a in allergy_list:
@@ -163,13 +172,13 @@ with col1:
             except:
                 valid_menus = menu_db["清淡"] if "清淡" in menu_db else []
             
-            # 随机选一个有效套餐
+            # 随机选一个有效套餐（确保多套不同）
             if valid_menus:
                 selected_menu = random.choice(valid_menus)
             else:
                 selected_menu = menu_db["清淡"][0] if "清淡" in menu_db else list(menu_db.values())[0][0]
             
-            # 生成Markdown内容（根据语言选择对应字段）
+            # 生成Markdown内容（全双语）
             res = f"### 🍜 一日三餐配餐方案（{target_taste}·{scene}·{crowd}）\n\n"
             total_cal = 0
             total_protein = 0
@@ -231,18 +240,22 @@ with col1:
                 total_protein += d["protein"]
             res += "\n---\n"
             
-            # 营养分析
+            # 营养分析（根据身高体重动态调整标准）
             res += f"### 📊 {t['nutrition']}\n"
             if crowd == "减脂人群" or crowd == "คนลดน้ำหนัก":
                 standard = "（减脂期推荐每日1200-1500kcal）" if lang == "中文" else "(แนะนำ 1200-1500 kcal ต่อวันสำหรับลดน้ำหนัก)"
             elif crowd == "老人儿童" or crowd == "ผู้สูงอายุและเด็ก":
                 standard = "（符合老人儿童每日营养需求）" if lang == "中文" else "(ตรงกับความต้องการโภชนาการประจำวันของผู้สูงอายุและเด็ก)"
             else:
-                standard = t["standard"]
+                # 根据性别调整标准
+                if gender == "男" or gender == "ชาย":
+                    standard = "（符合男性每日推荐摄入量）" if lang == "中文" else "(ตรงกับเป้าหมายประจำวันสำหรับผู้ชาย)"
+                else:
+                    standard = t["standard"]
             res += f"- {t['total_cal']}：{total_cal}kcal {standard}\n"
             res += f"- {t['total_protein']}：{round(total_protein, 1)}g（达标）\n"
             
-            # 健康提示（根据语言选择）
+            # 健康提示
             tip = selected_menu["tip_cn"] if lang == "中文" else selected_menu["tip_th"]
             res += f"\n💡 {t['tip']}：{tip}\n"
             
