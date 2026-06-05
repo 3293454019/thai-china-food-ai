@@ -3,391 +3,148 @@
     "普通人群": {
       "清淡": [
         {
-          "breakfast": [
-            {
-              "name": "玉米胡萝卜排骨汤+小笼包",
-              "cal": 360,
-              "protein": 15.9,
-              "origin": "粤式靓汤+江南小吃，源自岭南清补凉饮食文化",
-              "suitable": "老少皆宜，术后恢复、体质虚弱者尤佳",
-              "taboo": "痛风急性期、小麦过敏者慎食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "扬州炒饭+番茄炒蛋",
-              "cal": 532,
-              "protein": 20.0,
-              "origin": "淮扬菜经典主食，中国最普及家常菜",
-              "suitable": "一般人群，快餐首选",
-              "taboo": "鸡蛋过敏者禁食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "糖醋排骨+清炒时蔬",
-              "cal": 370,
-              "protein": 20.9,
-              "origin": "苏式家常菜，酸甜口味经典代表",
-              "suitable": "一般人群，食欲不振者尤佳",
-              "taboo": "糖尿病、肥胖、胃酸过多者慎食"
-            }
-          ],
+          "breakfast": [{"name": "玉米胡萝卜排骨汤+小笼包", "cal": 360, "protein": 15.9, "origin": "粤式靓汤+江南小吃，源自岭南清补凉饮食文化", "suitable": "老少皆宜，术后恢复、体质虚弱者尤佳", "taboo": "痛风急性期、小麦过敏者慎食"}],
+          "lunch": [{"name": "扬州炒饭+番茄炒蛋", "cal": 532, "protein": 20.0, "origin": "淮扬菜经典主食，中国最普及家常菜", "suitable": "一般人群，快餐首选", "taboo": "鸡蛋过敏者禁食"}],
+          "dinner": [{"name": "糖醋排骨+清炒时蔬", "cal": 370, "protein": 20.9, "origin": "苏式家常菜，酸甜口味经典代表", "suitable": "一般人群，食欲不振者尤佳", "taboo": "糖尿病、肥胖、胃酸过多者慎食"}],
           "tip": "日常均衡饮食，建议搭配适量水果"
         },
         {
-          "breakfast": [
-            {
-              "name": "小米粥+鲜肉包子",
-              "cal": 310,
-              "protein": 9.8,
-              "origin": "中国北方传统早餐，小米粥健脾养胃",
-              "suitable": "肠胃虚弱者、老人儿童",
-              "taboo": "小麦过敏者慎食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "白切鸡+清炒土豆丝",
-              "cal": 332,
-              "protein": 31.5,
-              "origin": "粤菜代表，原汁原味少油清淡",
-              "suitable": "一般人群，健身爱好者",
-              "taboo": "鸡肉过敏者禁食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "冬瓜丸子汤+清炒油麦菜",
-              "cal": 205,
-              "protein": 8.8,
-              "origin": "南方家常汤品，清热解暑",
-              "suitable": "夏季食用，水肿人群",
-              "taboo": "脾胃虚寒者慎食"
-            }
-          ],
+          "breakfast": [{"name": "小米粥+鲜肉包子", "cal": 310, "protein": 9.8, "origin": "中国北方传统早餐，小米粥健脾养胃", "suitable": "肠胃虚弱者、老人儿童", "taboo": "小麦过敏者慎食"}],
+          "lunch": [{"name": "白切鸡+清炒土豆丝", "cal": 332, "protein": 31.5, "origin": "粤菜代表，原汁原味少油清淡", "suitable": "一般人群，健身爱好者", "taboo": "鸡肉过敏者禁食"}],
+          "dinner": [{"name": "冬瓜丸子汤+清炒油麦菜", "cal": 205, "protein": 8.8, "origin": "南方家常汤品，清热解暑", "suitable": "夏季食用，水肿人群", "taboo": "脾胃虚寒者慎食"}],
           "tip": "清淡饮食有助于肠胃消化"
+        },
+        {
+          "breakfast": [{"name": "山药瘦肉粥+蒸蛋羹", "cal": 295, "protein": 10.2, "origin": "养生早餐，山药健脾养胃", "suitable": "肠胃不适者、老人儿童", "taboo": "鸡蛋过敏者禁食"}],
+          "lunch": [{"name": "清蒸鲈鱼+西兰花", "cal": 320, "protein": 28.5, "origin": "经典清蒸菜，刺少肉嫩", "suitable": "老人、儿童、健身人群", "taboo": "鱼类过敏者禁食"}],
+          "dinner": [{"name": "丝瓜豆腐汤+杂粮饭", "cal": 185, "protein": 7.8, "origin": "清淡汤品，清热去火", "suitable": "所有人群", "taboo": "大豆过敏者慎食"}],
+          "tip": "多吃清蒸菜，减少油脂摄入"
         }
       ],
       "微辣": [
         {
-          "breakfast": [
-            {
-              "name": "鲜肉小馄饨",
-              "cal": 240,
-              "protein": 8.1,
-              "origin": "江浙传统早点，白胡椒微辣提鲜",
-              "suitable": "一般人群，早餐首选",
-              "taboo": "小麦过敏者慎食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "鱼香肉丝+清炒油麦菜",
-              "cal": 375,
-              "protein": 24.3,
-              "origin": "川式微辣经典，酸甜微辣少油",
-              "suitable": "一般人群，下饭首选",
-              "taboo": "肠胃疾病患者慎食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "青椒肉片+冬瓜清汤",
-              "cal": 295,
-              "protein": 24.2,
-              "origin": "家常微辣菜品",
-              "suitable": "一般人群",
-              "taboo": "肠胃疾病患者慎食"
-            }
-          ],
+          "breakfast": [{"name": "鲜肉小馄饨", "cal": 240, "protein": 8.1, "origin": "江浙传统早点，白胡椒微辣提鲜", "suitable": "一般人群，早餐首选", "taboo": "小麦过敏者慎食"}],
+          "lunch": [{"name": "鱼香肉丝+清炒油麦菜", "cal": 375, "protein": 24.3, "origin": "川式微辣经典，酸甜微辣少油", "suitable": "一般人群，下饭首选", "taboo": "肠胃疾病患者慎食"}],
+          "dinner": [{"name": "青椒肉片+冬瓜清汤", "cal": 295, "protein": 24.2, "origin": "家常微辣菜品", "suitable": "一般人群", "taboo": "肠胃疾病患者慎食"}],
           "tip": "微辣开胃，适量食用即可"
+        },
+        {
+          "breakfast": [{"name": "三鲜烩面片", "cal": 270, "protein": 9.2, "origin": "北方传统面食，微辣胡椒调味", "suitable": "一般人群", "taboo": "小麦过敏者慎食"}],
+          "lunch": [{"name": "小炒黄牛肉+手撕包菜", "cal": 410, "protein": 28.5, "origin": "湘菜经典，微辣鲜香", "suitable": "喜欢微辣的人群", "taboo": "牛肉过敏者禁食"}],
+          "dinner": [{"name": "木耳炒肉片+丝瓜蛋汤", "cal": 295, "protein": 20.4, "origin": "家常营养菜品", "suitable": "一般人群", "taboo": "木耳、鸡蛋过敏者慎食"}],
+          "tip": "黄牛肉蛋白质含量高，适合补充营养"
+        },
+        {
+          "breakfast": [{"name": "青菜瘦肉肠粉", "cal": 255, "protein": 7.7, "origin": "广东传统早点，少许辣酱调味", "suitable": "一般人群", "taboo": "大米过敏者慎食"}],
+          "lunch": [{"name": "杭椒牛柳+清炒生菜", "cal": 360, "protein": 28.1, "origin": "浙菜经典，微辣鲜嫩", "suitable": "一般人群", "taboo": "牛肉过敏者禁食"}],
+          "dinner": [{"name": "嫩豆腐烧肉末+冬瓜汤", "cal": 215, "protein": 13.6, "origin": "家常下饭菜", "suitable": "一般人群", "taboo": "大豆过敏者慎食"}],
+          "tip": "肠粉清淡易消化，适合早餐食用"
         }
       ],
       "酸辣": [
         {
-          "breakfast": [
-            {
-              "name": "桂林米粉",
-              "cal": 236,
-              "protein": 7.6,
-              "origin": "广西桂林，距今2000余年历史",
-              "suitable": "一般人群，早餐首选",
-              "taboo": "肠胃疾病患者慎食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "螺蛳粉+银耳羹",
-              "cal": 340,
-              "protein": 12.2,
-              "origin": "广西柳州，融合米粉文化与酸辣风味",
-              "suitable": "喜欢酸辣口味的年轻人",
-              "taboo": "肠胃疾病患者、孕妇慎食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "鱼香茄子+青菜豆腐汤",
-              "cal": 195,
-              "protein": 6.2,
-              "origin": "川菜经典，酸甜辣口味",
-              "suitable": "一般人群",
-              "taboo": "茄子过敏者慎食"
-            }
-          ],
+          "breakfast": [{"name": "桂林米粉", "cal": 236, "protein": 7.6, "origin": "广西桂林，距今2000余年历史", "suitable": "一般人群，早餐首选", "taboo": "肠胃疾病患者慎食"}],
+          "lunch": [{"name": "螺蛳粉+银耳羹", "cal": 340, "protein": 12.2, "origin": "广西柳州，融合米粉文化与酸辣风味", "suitable": "喜欢酸辣口味的年轻人", "taboo": "肠胃疾病患者、孕妇慎食"}],
+          "dinner": [{"name": "鱼香茄子+青菜豆腐汤", "cal": 195, "protein": 6.2, "origin": "川菜经典，酸甜辣口味", "suitable": "一般人群", "taboo": "茄子过敏者慎食"}],
           "tip": "酸辣菜品刺激肠胃，不宜过量食用"
+        },
+        {
+          "breakfast": [{"name": "酸辣豆腐脑+韭菜盒子", "cal": 258, "protein": 8.9, "origin": "北方传统早餐组合", "suitable": "喜欢酸辣的人群", "taboo": "大豆、小麦过敏者慎食"}],
+          "lunch": [{"name": "酸汤肥牛+凉拌黄瓜", "cal": 305, "protein": 23.3, "origin": "贵州酸汤菜改良，酸辣开胃", "suitable": "食欲不振者", "taboo": "牛肉过敏者、肠胃疾病患者慎食"}],
+          "dinner": [{"name": "酸辣土豆丝+紫菜蛋花汤", "cal": 165, "protein": 6.3, "origin": "国民家常菜，酸辣脆爽", "suitable": "一般人群", "taboo": "紫菜、鸡蛋过敏者禁食"}],
+          "tip": "酸汤肥牛可搭配米饭，中和酸味"
+        },
+        {
+          "breakfast": [{"name": "酸辣杂酱面", "cal": 249, "protein": 8.3, "origin": "川味面食，酸辣香浓", "suitable": "喜欢酸辣口味的人群", "taboo": "小麦过敏者慎食"}],
+          "lunch": [{"name": "酸菜炖排骨+清炒小白菜", "cal": 380, "protein": 26.7, "origin": "东北家常菜，酸香开胃", "suitable": "食欲不振者", "taboo": "胃酸过多者慎食"}],
+          "dinner": [{"name": "凉拌藕片+番茄豆腐汤", "cal": 135, "protein": 5.4, "origin": "家常凉菜，酸辣爽口", "suitable": "一般人群", "taboo": "大豆过敏者慎食"}],
+          "tip": "酸菜腌制食品，不宜长期大量食用"
         }
       ],
       "重辣": [
         {
-          "breakfast": [
-            {
-              "name": "重庆红油小面",
-              "cal": 245,
-              "protein": 7.9,
-              "origin": "重庆特色面食，红油重辣",
-              "suitable": "喜欢重辣的人群",
-              "taboo": "肠胃疾病患者、孕妇慎食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "水煮肉片+清炒小白菜",
-              "cal": 380,
-              "protein": 36.1,
-              "origin": "川菜经典，麻辣鲜香",
-              "suitable": "喜欢重辣的年轻人",
-              "taboo": "肠胃疾病患者、痔疮患者慎食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "辣子鸡+丝瓜清汤",
-              "cal": 330,
-              "protein": 28.0,
-              "origin": "重庆江湖菜，麻辣干香",
-              "suitable": "喜欢重辣的人群",
-              "taboo": "鸡肉过敏者、肠胃疾病患者慎食"
-            }
-          ],
+          "breakfast": [{"name": "重庆红油小面", "cal": 245, "protein": 7.9, "origin": "重庆特色面食，红油重辣", "suitable": "喜欢重辣的人群", "taboo": "肠胃疾病患者、孕妇慎食"}],
+          "lunch": [{"name": "水煮肉片+清炒小白菜", "cal": 380, "protein": 36.1, "origin": "川菜经典，麻辣鲜香", "suitable": "喜欢重辣的年轻人", "taboo": "肠胃疾病患者、痔疮患者慎食"}],
+          "dinner": [{"name": "辣子鸡+丝瓜清汤", "cal": 330, "protein": 28.0, "origin": "重庆江湖菜，麻辣干香", "suitable": "喜欢重辣的人群", "taboo": "鸡肉过敏者、肠胃疾病患者慎食"}],
           "tip": "重辣菜品刺激性强，肠胃弱者请勿尝试"
+        },
+        {
+          "breakfast": [{"name": "麻辣抄手", "cal": 262, "protein": 9.1, "origin": "四川特色小吃，麻辣鲜香", "suitable": "喜欢重辣的人群", "taboo": "小麦过敏者、肠胃疾病患者慎食"}],
+          "lunch": [{"name": "毛血旺+凉拌海带丝", "cal": 415, "protein": 29.5, "origin": "重庆江湖菜，麻辣浓郁", "suitable": "喜欢重辣的人群", "taboo": "海鲜、动物血过敏者、肠胃疾病患者慎食"}],
+          "dinner": [{"name": "剁椒鱼头+清炒空心菜", "cal": 350, "protein": 25.6, "origin": "湘菜经典，鲜辣过瘾", "suitable": "喜欢重辣的人群", "taboo": "鱼类过敏者、肠胃疾病患者慎食"}],
+          "tip": "毛血旺食材丰富，可搭配米饭食用"
+        },
+        {
+          "breakfast": [{"name": "川味麻辣凉面", "cal": 251, "protein": 8.5, "origin": "四川特色面食，麻辣爽口", "suitable": "夏季食用，喜欢重辣的人群", "taboo": "小麦过敏者、肠胃疾病患者慎食"}],
+          "lunch": [{"name": "香辣干锅排骨+蒜蓉油麦菜", "cal": 435, "protein": 29.9, "origin": "川味干锅，麻辣干香", "suitable": "喜欢重辣的人群", "taboo": "排骨过敏者、肠胃疾病患者慎食"}],
+          "dinner": [{"name": "麻辣豆腐+冬瓜清汤", "cal": 165, "protein": 9.3, "origin": "川菜经典，麻辣鲜香", "suitable": "一般人群", "taboo": "大豆过敏者、肠胃疾病患者慎食"}],
+          "tip": "麻辣凉面夏季食用更爽口"
         }
       ]
     },
     "过敏体质": {
       "清淡": [
         {
-          "breakfast": [
-            {
-              "name": "小米粥+白煮蛋",
-              "cal": 220,
-              "protein": 10.5,
-              "origin": "北方传统早餐，低敏易消化",
-              "suitable": "过敏体质、肠胃虚弱者",
-              "taboo": "鸡蛋过敏者禁食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "清蒸鸡胸肉+清炒土豆丝",
-              "cal": 305,
-              "protein": 33.0,
-              "origin": "低敏家常菜，高蛋白低脂肪",
-              "suitable": "过敏体质",
-              "taboo": "鸡肉过敏者禁食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "冬瓜丸子汤+清炒娃娃菜",
-              "cal": 215,
-              "protein": 8.6,
-              "origin": "清淡汤品，无常见过敏源",
-              "suitable": "所有人群",
-              "taboo": "无特殊忌口"
-            }
-          ],
+          "breakfast": [{"name": "小米粥+白煮蛋", "cal": 220, "protein": 10.5, "origin": "北方传统早餐，低敏易消化", "suitable": "过敏体质、肠胃虚弱者", "taboo": "鸡蛋过敏者禁食"}],
+          "lunch": [{"name": "清蒸鸡胸肉+清炒土豆丝", "cal": 305, "protein": 33.0, "origin": "低敏家常菜，高蛋白低脂肪", "suitable": "过敏体质", "taboo": "鸡肉过敏者禁食"}],
+          "dinner": [{"name": "冬瓜丸子汤+清炒娃娃菜", "cal": 215, "protein": 8.6, "origin": "清淡汤品，无常见过敏源", "suitable": "所有人群", "taboo": "无特殊忌口"}],
           "tip": "过敏体质请务必确认食材成分，避免交叉污染"
-        }
-      ],
-      "微辣": [
+        },
         {
-          "breakfast": [
-            {
-              "name": "白粥+蒸饺",
-              "cal": 250,
-              "protein": 7.8,
-              "origin": "清淡早点，低敏配方",
-              "suitable": "轻度过敏体质",
-              "taboo": "小麦过敏者慎食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "清炒里脊+手撕包菜",
-              "cal": 320,
-              "protein": 22.5,
-              "origin": "低敏炒菜，无海鲜坚果",
-              "suitable": "过敏体质",
-              "taboo": "猪肉过敏者禁食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "丝瓜豆腐汤+白米饭",
-              "cal": 180,
-              "protein": 7.0,
-              "origin": "清淡汤饭，易消化",
-              "suitable": "所有人群",
-              "taboo": "大豆过敏者慎食"
-            }
-          ],
+          "breakfast": [{"name": "白粥+蒸山药", "cal": 180, "protein": 3.2, "origin": "清淡养生早餐", "suitable": "过敏体质、肠胃弱", "taboo": "无特殊忌口"}],
+          "lunch": [{"name": "清炒里脊+手撕包菜", "cal": 320, "protein": 22.5, "origin": "低敏炒菜，无海鲜坚果", "suitable": "过敏体质", "taboo": "猪肉过敏者禁食"}],
+          "dinner": [{"name": "丝瓜豆腐汤+白米饭", "cal": 180, "protein": 7.0, "origin": "清淡汤饭，易消化", "suitable": "所有人群", "taboo": "大豆过敏者慎食"}],
           "tip": "避免食用加工食品，优先选择新鲜食材"
+        },
+        {
+          "breakfast": [{"name": "燕麦粥+水煮蛋", "cal": 180, "protein": 12.3, "origin": "高纤维早餐，低敏", "suitable": "过敏体质、减脂人群", "taboo": "鸡蛋过敏者禁食"}],
+          "lunch": [{"name": "清蒸鲈鱼+南瓜泥", "cal": 320, "protein": 28.5, "origin": "低敏高蛋白菜品", "suitable": "过敏体质、老人儿童", "taboo": "鱼类过敏者禁食"}],
+          "dinner": [{"name": "蔬菜豆腐羹+小米粥", "cal": 185, "protein": 7.8, "origin": "软烂易消化", "suitable": "所有人群", "taboo": "大豆过敏者慎食"}],
+          "tip": "燕麦富含膳食纤维，有助于肠道健康"
         }
       ]
     },
     "减脂人群": {
       "清淡": [
         {
-          "breakfast": [
-            {
-              "name": "燕麦粥+水煮蛋",
-              "cal": 180,
-              "protein": 12.3,
-              "origin": "减脂经典早餐，高纤维高蛋白",
-              "suitable": "减脂、健身人群",
-              "taboo": "鸡蛋过敏者禁食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "香煎鸡胸肉+西兰花+糙米饭",
-              "cal": 350,
-              "protein": 35.5,
-              "origin": "高蛋白减脂餐，低油低糖",
-              "suitable": "减脂人群",
-              "taboo": "鸡肉过敏者禁食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "番茄豆腐汤+凉拌黄瓜",
-              "cal": 120,
-              "protein": 6.5,
-              "origin": "低卡晚餐，高纤维",
-              "suitable": "减脂人群",
-              "taboo": "大豆过敏者慎食"
-            }
-          ],
+          "breakfast": [{"name": "燕麦粥+水煮蛋", "cal": 180, "protein": 12.3, "origin": "减脂经典早餐，高纤维高蛋白", "suitable": "减脂、健身人群", "taboo": "鸡蛋过敏者禁食"}],
+          "lunch": [{"name": "香煎鸡胸肉+西兰花+糙米饭", "cal": 350, "protein": 35.5, "origin": "高蛋白减脂餐，低油低糖", "suitable": "减脂人群", "taboo": "鸡肉过敏者禁食"}],
+          "dinner": [{"name": "番茄豆腐汤+凉拌黄瓜", "cal": 120, "protein": 6.5, "origin": "低卡晚餐，高纤维", "suitable": "减脂人群", "taboo": "大豆过敏者慎食"}],
           "tip": "每日热量控制在1200-1500kcal，配合30分钟有氧运动效果更佳"
-        }
-      ],
-      "微辣": [
+        },
         {
-          "breakfast": [
-            {
-              "name": "全麦面包+无糖豆浆",
-              "cal": 210,
-              "protein": 10.8,
-              "origin": "减脂便携早餐，全谷物",
-              "suitable": "减脂人群",
-              "taboo": "小麦、大豆过敏者慎食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "水煮牛肉+清炒生菜",
-              "cal": 320,
-              "protein": 28.7,
-              "origin": "高蛋白微辣餐，少油版",
-              "suitable": "减脂人群",
-              "taboo": "牛肉过敏者禁食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "冬瓜海带汤+玉米段",
-              "cal": 95,
-              "protein": 4.2,
-              "origin": "低卡汤品，消水肿",
-              "suitable": "减脂人群",
-              "taboo": "海带过敏者慎食"
-            }
-          ],
-          "tip": "多喝水，少吃精制碳水，保证充足睡眠"
+          "breakfast": [{"name": "无糖酸奶+蓝莓", "cal": 150, "protein": 8.5, "origin": "减脂便携早餐", "suitable": "减脂人群", "taboo": "牛奶过敏者禁食"}],
+          "lunch": [{"name": "水煮虾+芦笋+糙米饭", "cal": 280, "protein": 25.8, "origin": "高蛋白低卡餐", "suitable": "减脂人群", "taboo": "海鲜过敏者禁食"}],
+          "dinner": [{"name": "冬瓜海带汤+玉米段", "cal": 95, "protein": 4.2, "origin": "低卡汤品，消水肿", "suitable": "减脂人群", "taboo": "海带过敏者慎食"}],
+          "tip": "虾富含优质蛋白，脂肪含量极低"
+        },
+        {
+          "breakfast": [{"name": "全麦面包+无糖豆浆", "cal": 210, "protein": 10.8, "origin": "减脂便携早餐，全谷物", "suitable": "减脂人群", "taboo": "小麦、大豆过敏者慎食"}],
+          "lunch": [{"name": "清蒸龙利鱼+菠菜+糙米饭", "cal": 290, "protein": 27.3, "origin": "无刺高蛋白", "suitable": "减脂人群", "taboo": "鱼类过敏者禁食"}],
+          "dinner": [{"name": "菌菇汤+凉拌生菜", "cal": 110, "protein": 5.7, "origin": "低卡高纤维", "suitable": "减脂人群", "taboo": "菌菇过敏者慎食"}],
+          "tip": "龙利鱼无刺，适合老人儿童和减脂人群"
         }
       ]
     },
     "老人儿童": {
       "清淡": [
         {
-          "breakfast": [
-            {
-              "name": "山药瘦肉粥+蒸蛋羹",
-              "cal": 295,
-              "protein": 10.2,
-              "origin": "养生早餐，健脾养胃",
-              "suitable": "老人、儿童",
-              "taboo": "鸡蛋过敏者禁食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "清蒸鲈鱼+南瓜泥+软米饭",
-              "cal": 320,
-              "protein": 28.5,
-              "origin": "易消化营养餐，刺少肉嫩",
-              "suitable": "老人、儿童",
-              "taboo": "鱼类过敏者禁食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "蔬菜豆腐羹+小米粥",
-              "cal": 185,
-              "protein": 7.8,
-              "origin": "软烂晚餐，易消化",
-              "suitable": "老人、儿童",
-              "taboo": "大豆过敏者慎食"
-            }
-          ],
+          "breakfast": [{"name": "山药瘦肉粥+蒸蛋羹", "cal": 295, "protein": 10.2, "origin": "养生早餐，健脾养胃", "suitable": "老人、儿童", "taboo": "鸡蛋过敏者禁食"}],
+          "lunch": [{"name": "清蒸鲈鱼+南瓜泥+软米饭", "cal": 320, "protein": 28.5, "origin": "易消化营养餐，刺少肉嫩", "suitable": "老人、儿童", "taboo": "鱼类过敏者禁食"}],
+          "dinner": [{"name": "蔬菜豆腐羹+小米粥", "cal": 185, "protein": 7.8, "origin": "软烂晚餐，易消化", "suitable": "老人、儿童", "taboo": "大豆过敏者慎食"}],
           "tip": "食物切小块煮软烂，细嚼慢咽，避免呛咳"
-        }
-      ],
-      "微辣": [
+        },
         {
-          "breakfast": [
-            {
-              "name": "南瓜粥+小包子",
-              "cal": 230,
-              "protein": 6.5,
-              "origin": "温和早餐，香甜软糯",
-              "suitable": "能吃微辣的儿童",
-              "taboo": "小麦过敏者慎食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "番茄炖牛腩+软米饭",
-              "cal": 380,
-              "protein": 25.3,
-              "origin": "营养炖菜，软烂入味",
-              "suitable": "老人、儿童",
-              "taboo": "牛肉过敏者禁食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "鸡蛋羹+青菜粥",
-              "cal": 160,
-              "protein": 8.2,
-              "origin": "清淡晚餐，易消化",
-              "suitable": "老人、儿童",
-              "taboo": "鸡蛋过敏者禁食"
-            }
-          ],
-          "tip": "儿童避免过辣，老人注意控制盐分摄入"
+          "breakfast": [{"name": "南瓜粥+小包子", "cal": 230, "protein": 6.5, "origin": "温和早餐，香甜软糯", "suitable": "老人、儿童", "taboo": "小麦过敏者慎食"}],
+          "lunch": [{"name": "番茄炖牛腩+软米饭", "cal": 380, "protein": 25.3, "origin": "营养炖菜，软烂入味", "suitable": "老人、儿童", "taboo": "牛肉过敏者禁食"}],
+          "dinner": [{"name": "鸡蛋羹+青菜粥", "cal": 160, "protein": 8.2, "origin": "清淡晚餐，易消化", "suitable": "老人、儿童", "taboo": "鸡蛋过敏者禁食"}],
+          "tip": "番茄炖牛腩营养丰富，适合补充蛋白质"
+        },
+        {
+          "breakfast": [{"name": "牛奶+蒸蛋糕", "cal": 250, "protein": 7.8, "origin": "温和早餐，松软易消化", "suitable": "老人、儿童", "taboo": "牛奶、小麦过敏者慎食"}],
+          "lunch": [{"name": "虾仁蒸蛋+软米饭", "cal": 280, "protein": 18.5, "origin": "嫩滑营养，易吸收", "suitable": "儿童", "taboo": "海鲜、鸡蛋过敏者禁食"}],
+          "dinner": [{"name": "小米粥+清蒸山药", "cal": 170, "protein": 3.5, "origin": "清淡养胃", "suitable": "老人、儿童", "taboo": "无特殊忌口"}],
+          "tip": "虾仁蒸蛋嫩滑，适合儿童食用"
         }
       ]
     }
@@ -396,183 +153,42 @@
     "普通人群": {
       "清淡": [
         {
-          "breakfast": [
-            {
-              "name": "全麦三明治+纯牛奶",
-              "cal": 320,
-              "protein": 12.5,
-              "origin": "西式便携早餐，营养均衡",
-              "suitable": "上班族、学生党",
-              "taboo": "小麦、牛奶过敏者慎食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "鸡肉饭团+原味酸奶",
-              "cal": 460,
-              "protein": 18.4,
-              "origin": "日式便携主食，方便携带",
-              "suitable": "出行人群",
-              "taboo": "鸡肉、牛奶过敏者慎食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "番茄鸡蛋盖浇饭+苹果",
-              "cal": 402,
-              "protein": 13.0,
-              "origin": "国民快餐，外卖首选",
-              "suitable": "出行人群",
-              "taboo": "鸡蛋过敏者禁食"
-            }
-          ],
+          "breakfast": [{"name": "全麦三明治+纯牛奶", "cal": 320, "protein": 12.5, "origin": "西式便携早餐，营养均衡", "suitable": "上班族、学生党", "taboo": "小麦、牛奶过敏者慎食"}],
+          "lunch": [{"name": "鸡肉饭团+原味酸奶", "cal": 460, "protein": 18.4, "origin": "日式便携主食，方便携带", "suitable": "出行人群", "taboo": "鸡肉、牛奶过敏者慎食"}],
+          "dinner": [{"name": "番茄鸡蛋盖浇饭+苹果", "cal": 402, "protein": 13.0, "origin": "国民快餐，外卖首选", "suitable": "出行人群", "taboo": "鸡蛋过敏者禁食"}],
           "tip": "出行注意饮食卫生，避免生冷食物"
+        },
+        {
+          "breakfast": [{"name": "豆浆+茶叶蛋", "cal": 210, "protein": 10.3, "origin": "中国传统便携早餐", "suitable": "所有人群", "taboo": "大豆、鸡蛋过敏者慎食"}],
+          "lunch": [{"name": "叉烧饭+矿泉水", "cal": 420, "protein": 18.7, "origin": "粤式快餐，成分简单", "suitable": "出行人群", "taboo": "猪肉过敏者慎食"}],
+          "dinner": [{"name": "白切鸡饭+香蕉", "cal": 390, "protein": 30.6, "origin": "清淡快餐，无复杂调料", "suitable": "出行人群", "taboo": "鸡肉过敏者禁食"}],
+          "tip": "选择连锁餐厅，饮食更有保障"
+        },
+        {
+          "breakfast": [{"name": "包子+小米粥", "cal": 240, "protein": 6.8, "origin": "传统便携早餐", "suitable": "所有人群", "taboo": "小麦过敏者慎食"}],
+          "lunch": [{"name": "宫保鸡丁盖浇饭+冰红茶", "cal": 450, "protein": 17.2, "origin": "经典川菜快餐", "suitable": "一般人群", "taboo": "花生、鸡肉过敏者慎食"}],
+          "dinner": [{"name": "鲜虾云吞面+橘子", "cal": 361, "protein": 15.2, "origin": "港式经典面食", "suitable": "一般人群", "taboo": "海鲜、小麦过敏者慎食"}],
+          "tip": "出行多喝水，避免过于油腻的食物"
         }
       ],
       "微辣": [
         {
-          "breakfast": [
-            {
-              "name": "香辣牛肉包+豆浆",
-              "cal": 340,
-              "protein": 11.8,
-              "origin": "中式便携早餐",
-              "suitable": "喜欢微辣的人群",
-              "taboo": "牛肉、大豆过敏者慎食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "鱼香肉丝盖浇饭+冰红茶",
-              "cal": 455,
-              "protein": 19.2,
-              "origin": "川式快餐，下饭首选",
-              "suitable": "一般人群",
-              "taboo": "无特殊忌口"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "青椒肉丝面+橘子",
-              "cal": 371,
-              "protein": 16.3,
-              "origin": "家常面食，方便快捷",
-              "suitable": "一般人群",
-              "taboo": "小麦过敏者慎食"
-            }
-          ],
+          "breakfast": [{"name": "香辣牛肉包+豆浆", "cal": 340, "protein": 11.8, "origin": "中式便携早餐", "suitable": "喜欢微辣的人群", "taboo": "牛肉、大豆过敏者慎食"}],
+          "lunch": [{"name": "鱼香肉丝盖浇饭+冰红茶", "cal": 455, "protein": 19.2, "origin": "川式快餐，下饭首选", "suitable": "一般人群", "taboo": "无特殊忌口"}],
+          "dinner": [{"name": "青椒肉丝面+橘子", "cal": 371, "protein": 16.3, "origin": "家常面食，方便快捷", "suitable": "一般人群", "taboo": "小麦过敏者慎食"}],
           "tip": "出行多喝水，避免过于油腻的食物"
-        }
-      ]
-    },
-    "过敏体质": {
-      "清淡": [
+        },
         {
-          "breakfast": [
-            {
-              "name": "白粥+茶叶蛋",
-              "cal": 210,
-              "protein": 10.3,
-              "origin": "传统便携早餐，低敏",
-              "suitable": "过敏体质",
-              "taboo": "鸡蛋过敏者禁食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "叉烧饭+矿泉水",
-              "cal": 420,
-              "protein": 18.7,
-              "origin": "粤式快餐，成分简单",
-              "suitable": "过敏体质",
-              "taboo": "猪肉过敏者慎食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "白切鸡饭+香蕉",
-              "cal": 390,
-              "protein": 30.6,
-              "origin": "清淡快餐，无复杂调料",
-              "suitable": "过敏体质",
-              "taboo": "鸡肉过敏者禁食"
-            }
-          ],
-          "tip": "选择连锁餐厅，避免路边摊，主动告知服务员过敏情况"
-        }
-      ]
-    },
-    "减脂人群": {
-      "清淡": [
+          "breakfast": [{"name": "麻辣小面", "cal": 245, "protein": 7.9, "origin": "重庆特色面食，微辣", "suitable": "喜欢微辣的人群", "taboo": "小麦过敏者慎食"}],
+          "lunch": [{"name": "回锅肉盖浇饭+可乐", "cal": 480, "protein": 18.5, "origin": "川菜经典快餐", "suitable": "一般人群", "taboo": "猪肉过敏者慎食"}],
+          "dinner": [{"name": "酸辣粉+梨", "cal": 338, "protein": 7.2, "origin": "川渝特色小吃", "suitable": "喜欢酸辣的人群", "taboo": "肠胃疾病患者慎食"}],
+          "tip": "麻辣小面可要求少辣"
+        },
         {
-          "breakfast": [
-            {
-              "name": "无糖酸奶+燕麦片",
-              "cal": 190,
-              "protein": 11.2,
-              "origin": "减脂便携早餐",
-              "suitable": "减脂人群",
-              "taboo": "牛奶过敏者禁食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "鸡胸肉沙拉+糙米饭",
-              "cal": 320,
-              "protein": 28.5,
-              "origin": "减脂沙拉餐，低卡高蛋白",
-              "suitable": "减脂人群",
-              "taboo": "鸡肉过敏者禁食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "蔬菜卷+无糖豆浆",
-              "cal": 210,
-              "protein": 9.8,
-              "origin": "低卡便携餐",
-              "suitable": "减脂人群",
-              "taboo": "大豆过敏者慎食"
-            }
-          ],
-          "tip": "避免奶茶、油炸食品，选择无糖饮品"
-        }
-      ]
-    },
-    "老人儿童": {
-      "清淡": [
-        {
-          "breakfast": [
-            {
-              "name": "牛奶+蒸蛋糕",
-              "cal": 250,
-              "protein": 7.8,
-              "origin": "温和早餐，松软易消化",
-              "suitable": "老人、儿童",
-              "taboo": "牛奶、小麦过敏者慎食"
-            }
-          ],
-          "lunch": [
-            {
-              "name": "儿童套餐（蒸蛋+米饭+青菜）",
-              "cal": 320,
-              "protein": 12.5,
-              "origin": "儿童专属餐，营养均衡",
-              "suitable": "儿童",
-              "taboo": "鸡蛋过敏者禁食"
-            }
-          ],
-          "dinner": [
-            {
-              "name": "粥品+小包子",
-              "cal": 280,
-              "protein": 6.2,
-              "origin": "易消化晚餐",
-              "suitable": "老人、儿童",
-              "taboo": "小麦过敏者慎食"
-            }
-          ],
-          "tip": "出行携带保温杯，避免吃太烫或太冰的食物"
+          "breakfast": [{"name": "肉夹馍+豆浆", "cal": 310, "protein": 9.5, "origin": "陕西特色小吃", "suitable": "一般人群", "taboo": "小麦、猪肉、大豆过敏者慎食"}],
+          "lunch": [{"name": "麻婆豆腐盖浇饭+雪碧", "cal": 420, "protein": 12.3, "origin": "川菜经典", "suitable": "一般人群", "taboo": "大豆过敏者慎食"}],
+          "dinner": [{"name": "杂酱面+西瓜", "cal": 325, "protein": 9.1, "origin": "家常面食", "suitable": "一般人群", "taboo": "小麦过敏者慎食"}],
+          "tip": "肉夹馍搭配豆浆，营养更均衡"
         }
       ]
     }
