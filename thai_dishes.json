@@ -146,6 +146,52 @@
           "dinner": [{"name": "泰式炒面+西瓜", "cal": 325, "protein": 9.8, "origin": "泰式经典面食", "suitable": "一般人群", "taboo": "小麦过敏者慎食"}],
           "tip": "冬阴功汤面酸辣过瘾"
         }
+      ],
+      "酸辣": [
+        {
+          "breakfast": [{"name": "酸辣粉丝汤", "cal": 220, "protein": 5.8, "origin": "泰式小吃，酸辣开胃", "suitable": "食欲不振者", "taboo": "肠胃疾病患者慎食"}],
+          "lunch": [{"name": "冬阴功汤面+椰子水", "cal": 395, "protein": 14.7, "origin": "泰国国汤面", "suitable": "喜欢酸辣的人群", "taboo": "大米、椰子、肠胃疾病患者慎食"}],
+          "dinner": [{"name": "青木瓜沙拉+糯米饭", "cal": 300, "protein": 6.8, "origin": "泰式经典组合", "suitable": "减脂人群", "taboo": "木瓜过敏者慎食"}],
+          "tip": "冬阴功汤酸辣开胃"
+        }
+      ],
+      "重辣": [
+        {
+          "breakfast": [{"name": "泰式辣炒米粉", "cal": 290, "protein": 7.5, "origin": "泰式早餐，重辣", "suitable": "喜欢重辣的人群", "taboo": "大米、肠胃疾病患者慎食"}],
+          "lunch": [{"name": "红咖喱鸡肉饭+冰咖啡", "cal": 410, "protein": 19.7, "origin": "泰式重辣快餐", "suitable": "喜欢重辣的人群", "taboo": "椰子、鸡肉、咖啡因过敏者慎食"}],
+          "dinner": [{"name": "重辣罗勒鸡肉饭+西瓜", "cal": 360, "protein": 23.2, "origin": "泰式重辣快餐", "suitable": "喜欢重辣的人群", "taboo": "鸡肉过敏者、肠胃疾病患者慎食"}],
+          "tip": "泰式重辣菜品刺激性强，肠胃弱者请勿尝试"
+        }
+      ]
+    },
+    "过敏体质": {
+      "清淡": [
+        {
+          "breakfast": [{"name": "白粥+水煮蛋", "cal": 180, "protein": 6.5, "origin": "低敏便携早餐", "suitable": "过敏体质", "taboo": "鸡蛋过敏者禁食"}],
+          "lunch": [{"name": "白切鸡饭+矿泉水", "cal": 390, "protein": 30.6, "origin": "清淡快餐，无复杂调料", "suitable": "过敏体质", "taboo": "鸡肉过敏者禁食"}],
+          "dinner": [{"name": "土豆丝盖浇饭+香蕉", "cal": 320, "protein": 4.5, "origin": "清淡快餐", "suitable": "过敏体质", "taboo": "无特殊忌口"}],
+          "tip": "选择连锁餐厅，主动告知服务员过敏情况"
+        }
+      ]
+    },
+    "减脂人群": {
+      "清淡": [
+        {
+          "breakfast": [{"name": "无糖椰子水+水煮蛋", "cal": 89, "protein": 6.4, "origin": "天然饮品+高蛋白", "suitable": "减脂人群", "taboo": "椰子、鸡蛋过敏者慎食"}],
+          "lunch": [{"name": "鸡胸肉沙拉+糙米饭", "cal": 320, "protein": 28.5, "origin": "减脂沙拉餐", "suitable": "减脂人群", "taboo": "鸡肉过敏者禁食"}],
+          "dinner": [{"name": "凉拌黄瓜+玉米", "cal": 95, "protein": 4.2, "origin": "低卡晚餐", "suitable": "减脂人群", "taboo": "无特殊忌口"}],
+          "tip": "避免椰浆、油炸食品，选择无糖饮品"
+        }
+      ]
+    },
+    "老人儿童": {
+      "清淡": [
+        {
+          "breakfast": [{"name": "泰式南瓜粥", "cal": 210, "protein": 4.2, "origin": "温和早餐，易消化", "suitable": "老人、儿童", "taboo": "无特殊忌口"}],
+          "lunch": [{"name": "鸡肉盖浇饭+香蕉", "cal": 399, "protein": 22.7, "origin": "清淡快餐", "suitable": "老人、儿童", "taboo": "鸡肉过敏者禁食"}],
+          "dinner": [{"name": "白粥+蒸蛋", "cal": 180, "protein": 8.2, "origin": "易消化晚餐", "suitable": "老人、儿童", "taboo": "鸡蛋过敏者禁食"}],
+          "tip": "出行携带保温杯，避免生冷食物"
+        }
       ]
     }
   }
