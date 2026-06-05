@@ -111,21 +111,20 @@ with col1:
     allergy = st.text_input(t["allergy"], placeholder=t["allergy_placeholder"])
     cuisine = st.radio(t["cuisine"], t["cuisine_options"])
 
-    # 生成按钮（修复卡顿问题：移除time.sleep，改用原生spinner）
+    # 生成按钮
     if st.button(t["generate"], type="primary", key="gen_btn"):
         # 先删除旧结果，强制重新生成
         if "result" in st.session_state:
             del st.session_state["result"]
         
         with st.spinner(t["loading"]):
-            # 安全获取菜品库（增加异常处理）
+            # 安全获取菜品库
             try:
                 if cuisine in ("中餐", "อาหารจีน"):
                     menu_db = cn_dishes[scene][crowd]
                 else:
                     menu_db = thai_dishes[scene][crowd]
             except KeyError:
-                # 如果场景+人群不存在，默认用居家+普通人群
                 menu_db = cn_dishes["居家"]["普通人群"] if cuisine in ("中餐", "อาหารจีน") else thai_dishes["居家"]["普通人群"]
             
             # 过滤含忌口的套餐
@@ -138,7 +137,7 @@ with col1:
                 allergy_list.extend(common_allergens)
                 allergy_list = list(set(allergy_list))
             
-            # 安全获取口味（增加异常处理）
+            # 安全获取口味
             target_taste = taste
             if target_taste not in menu_db:
                 target_taste = "清淡" if lang == "中文" else "อ่อน"
@@ -148,8 +147,11 @@ with col1:
                     has_allergy = False
                     for meal in ["breakfast", "lunch", "dinner"]:
                         for dish in menu[meal]:
+                            # 根据语言选择对应的名称和禁忌进行过滤
+                            dish_name = dish["name_cn"] if lang == "中文" else dish["name_th"]
+                            dish_taboo = dish["taboo_cn"] if lang == "中文" else dish["taboo_th"]
                             for a in allergy_list:
-                                if a in dish["name"] or a in dish["taboo"]:
+                                if a in dish_name or a in dish_taboo:
                                     has_allergy = True
                                     break
                             if has_allergy:
@@ -165,46 +167,66 @@ with col1:
             if valid_menus:
                 selected_menu = random.choice(valid_menus)
             else:
-                # 如果没有有效套餐，默认用第一个清淡套餐
                 selected_menu = menu_db["清淡"][0] if "清淡" in menu_db else list(menu_db.values())[0][0]
             
-            # 生成Markdown内容
+            # 生成Markdown内容（根据语言选择对应字段）
             res = f"### 🍜 一日三餐配餐方案（{target_taste}·{scene}·{crowd}）\n\n"
             total_cal = 0
             total_protein = 0
             
             # 早餐
             res += "**早餐**："
-            breakfast_names = [f"{d['name']}（{d['cal']}kcal，蛋白质{d['protein']}g）" for d in selected_menu["breakfast"]]
-            res += " + ".join(breakfast_names) + "\n"
+            breakfast_names = []
             for d in selected_menu["breakfast"]:
-                res += f"- {t['origin']}：{d['origin']}\n"
-                res += f"- {t['suitable']}：{d['suitable']}\n"
-                res += f"- {t['taboo']}：{d['taboo']}\n"
+                name = d["name_cn"] if lang == "中文" else d["name_th"]
+                breakfast_names.append(f"{name}（{d['cal']}kcal，蛋白质{d['protein']}g）")
+            res += " + ".join(breakfast_names) + "\n"
+            
+            for d in selected_menu["breakfast"]:
+                origin = d["origin_cn"] if lang == "中文" else d["origin_th"]
+                suitable = d["suitable_cn"] if lang == "中文" else d["suitable_th"]
+                taboo = d["taboo_cn"] if lang == "中文" else d["taboo_th"]
+                res += f"- {t['origin']}：{origin}\n"
+                res += f"- {t['suitable']}：{suitable}\n"
+                res += f"- {t['taboo']}：{taboo}\n"
                 total_cal += d["cal"]
                 total_protein += d["protein"]
             res += "\n"
             
             # 午餐
             res += "**午餐**："
-            lunch_names = [f"{d['name']}（{d['cal']}kcal，蛋白质{d['protein']}g）" for d in selected_menu["lunch"]]
-            res += " + ".join(lunch_names) + "\n"
+            lunch_names = []
             for d in selected_menu["lunch"]:
-                res += f"- {t['origin']}：{d['origin']}\n"
-                res += f"- {t['suitable']}：{d['suitable']}\n"
-                res += f"- {t['taboo']}：{d['taboo']}\n"
+                name = d["name_cn"] if lang == "中文" else d["name_th"]
+                lunch_names.append(f"{name}（{d['cal']}kcal，蛋白质{d['protein']}g）")
+            res += " + ".join(lunch_names) + "\n"
+            
+            for d in selected_menu["lunch"]:
+                origin = d["origin_cn"] if lang == "中文" else d["origin_th"]
+                suitable = d["suitable_cn"] if lang == "中文" else d["suitable_th"]
+                taboo = d["taboo_cn"] if lang == "中文" else d["taboo_th"]
+                res += f"- {t['origin']}：{origin}\n"
+                res += f"- {t['suitable']}：{suitable}\n"
+                res += f"- {t['taboo']}：{taboo}\n"
                 total_cal += d["cal"]
                 total_protein += d["protein"]
             res += "\n"
             
             # 晚餐
             res += "**晚餐**："
-            dinner_names = [f"{d['name']}（{d['cal']}kcal，蛋白质{d['protein']}g）" for d in selected_menu["dinner"]]
-            res += " + ".join(dinner_names) + "\n"
+            dinner_names = []
             for d in selected_menu["dinner"]:
-                res += f"- {t['origin']}：{d['origin']}\n"
-                res += f"- {t['suitable']}：{d['suitable']}\n"
-                res += f"- {t['taboo']}：{d['taboo']}\n"
+                name = d["name_cn"] if lang == "中文" else d["name_th"]
+                dinner_names.append(f"{name}（{d['cal']}kcal，蛋白质{d['protein']}g）")
+            res += " + ".join(dinner_names) + "\n"
+            
+            for d in selected_menu["dinner"]:
+                origin = d["origin_cn"] if lang == "中文" else d["origin_th"]
+                suitable = d["suitable_cn"] if lang == "中文" else d["suitable_th"]
+                taboo = d["taboo_cn"] if lang == "中文" else d["taboo_th"]
+                res += f"- {t['origin']}：{origin}\n"
+                res += f"- {t['suitable']}：{suitable}\n"
+                res += f"- {t['taboo']}：{taboo}\n"
                 total_cal += d["cal"]
                 total_protein += d["protein"]
             res += "\n---\n"
@@ -212,16 +234,17 @@ with col1:
             # 营养分析
             res += f"### 📊 {t['nutrition']}\n"
             if crowd == "减脂人群" or crowd == "คนลดน้ำหนัก":
-                standard = "（减脂期推荐每日1200-1500kcal）"
+                standard = "（减脂期推荐每日1200-1500kcal）" if lang == "中文" else "(แนะนำ 1200-1500 kcal ต่อวันสำหรับลดน้ำหนัก)"
             elif crowd == "老人儿童" or crowd == "ผู้สูงอายุและเด็ก":
-                standard = "（符合老人儿童每日营养需求）"
+                standard = "（符合老人儿童每日营养需求）" if lang == "中文" else "(ตรงกับความต้องการโภชนาการประจำวันของผู้สูงอายุและเด็ก)"
             else:
                 standard = t["standard"]
             res += f"- {t['total_cal']}：{total_cal}kcal {standard}\n"
             res += f"- {t['total_protein']}：{round(total_protein, 1)}g（达标）\n"
             
-            # 健康提示
-            res += f"\n💡 {t['tip']}：{selected_menu['tip']}\n"
+            # 健康提示（根据语言选择）
+            tip = selected_menu["tip_cn"] if lang == "中文" else selected_menu["tip_th"]
+            res += f"\n💡 {t['tip']}：{tip}\n"
             
             st.session_state["result"] = res
             # 强制刷新页面
