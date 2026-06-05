@@ -2,6 +2,7 @@ import streamlit as st
 import random
 import json
 import os
+import time
 
 # 中泰双语翻译
 trans = {
@@ -23,7 +24,7 @@ trans = {
         "cuisine": "配餐菜系",
         "cuisine_options": ["中餐", "泰餐"],
         "generate": "一键生成配餐方案",
-        "loading": "AI正在生成对应人群与场景的专属配餐方案...",
+        "loading": "正在为您生成专属配餐方案",
         "result": "生成结果",
         "nutrition": "营养分析",
         "total_cal": "总热量",
@@ -55,7 +56,7 @@ trans = {
         "cuisine": "ประเภทอาหาร",
         "cuisine_options": ["อาหารจีน", "อาหารไทย"],
         "generate": "สร้างเมนูอาหารทันที",
-        "loading": "AI กำลังสร้างเมนูเฉพาะตามประเภทและสถานการณ์...",
+        "loading": "กำลังสร้างเมนูอาหารเฉพาะของคุณ",
         "result": "ผลลัพธ์",
         "nutrition": "การวิเคราะห์โภชนาการ",
         "total_cal": "แคลอรี่รวม",
@@ -108,13 +109,20 @@ with col1:
     allergy = st.text_input(t["allergy"], placeholder=t["allergy_placeholder"])
     cuisine = st.radio(t["cuisine"], t["cuisine_options"])
 
-    # 修复：点击生成按钮强制刷新
+    # 生成按钮+动态刷新动画
     if st.button(t["generate"], type="primary", key="gen_btn"):
         # 先删除旧结果，强制重新生成
         if "result" in st.session_state:
             del st.session_state["result"]
         
+        # 动态加载动画（带进度条+旋转图标）
         with st.spinner(t["loading"]):
+            # 模拟加载进度，增强动画效果
+            progress_bar = st.progress(0)
+            for i in range(100):
+                time.sleep(0.01)
+                progress_bar.progress(i+1)
+            
             # 选择对应菜品库
             if cuisine in ("中餐", "อาหารจีน"):
                 menu_db = cn_dishes[scene][crowd]
@@ -131,7 +139,7 @@ with col1:
                 allergy_list.extend(common_allergens)
                 allergy_list = list(set(allergy_list))
             
-            # 修复：口味严格匹配，找不到对应口味才用清淡
+            # 口味严格匹配
             target_taste = taste
             if target_taste not in menu_db:
                 target_taste = "清淡" if lang == "中文" else "อ่อน"
@@ -154,7 +162,7 @@ with col1:
             # 随机选一个有效套餐
             selected_menu = random.choice(valid_menus) if valid_menus else random.choice(menu_db[target_taste])
             
-            # 生成Markdown内容（修复：标题显示正确口味）
+            # 生成Markdown内容
             res = f"### 🍜 一日三餐配餐方案（{target_taste}·{scene}·{crowd}）\n\n"
             total_cal = 0
             total_protein = 0
