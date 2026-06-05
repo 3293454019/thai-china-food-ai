@@ -2,7 +2,6 @@ import streamlit as st
 import random
 import json
 import os
-import time
 
 # 中泰双语翻译
 trans = {
@@ -77,8 +76,11 @@ trans = {
 def load_dishes(filename):
     if not os.path.exists(filename):
         return None
-    with open(filename, "r", encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with open(filename, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except:
+        return None
 
 # 页面配置
 st.set_page_config(page_title="中泰营养配餐AI", layout="wide")
@@ -109,25 +111,22 @@ with col1:
     allergy = st.text_input(t["allergy"], placeholder=t["allergy_placeholder"])
     cuisine = st.radio(t["cuisine"], t["cuisine_options"])
 
-    # 生成按钮+动态刷新动画
+    # 生成按钮（修复卡顿问题：移除time.sleep，改用原生spinner）
     if st.button(t["generate"], type="primary", key="gen_btn"):
         # 先删除旧结果，强制重新生成
         if "result" in st.session_state:
             del st.session_state["result"]
         
-        # 动态加载动画（带进度条+旋转图标）
         with st.spinner(t["loading"]):
-            # 模拟加载进度，增强动画效果
-            progress_bar = st.progress(0)
-            for i in range(100):
-                time.sleep(0.01)
-                progress_bar.progress(i+1)
-            
-            # 选择对应菜品库
-            if cuisine in ("中餐", "อาหารจีน"):
-                menu_db = cn_dishes[scene][crowd]
-            else:
-                menu_db = thai_dishes[scene][crowd]
+            # 安全获取菜品库（增加异常处理）
+            try:
+                if cuisine in ("中餐", "อาหารจีน"):
+                    menu_db = cn_dishes[scene][crowd]
+                else:
+                    menu_db = thai_dishes[scene][crowd]
+            except KeyError:
+                # 如果场景+人群不存在，默认用居家+普通人群
+                menu_db = cn_dishes["居家"]["普通人群"] if cuisine in ("中餐", "อาหารจีน") else thai_dishes["居家"]["普通人群"]
             
             # 过滤含忌口的套餐
             valid_menus = []
@@ -139,28 +138,35 @@ with col1:
                 allergy_list.extend(common_allergens)
                 allergy_list = list(set(allergy_list))
             
-            # 口味严格匹配
+            # 安全获取口味（增加异常处理）
             target_taste = taste
             if target_taste not in menu_db:
                 target_taste = "清淡" if lang == "中文" else "อ่อน"
             
-            for menu in menu_db[target_taste]:
-                has_allergy = False
-                for meal in ["breakfast", "lunch", "dinner"]:
-                    for dish in menu[meal]:
-                        for a in allergy_list:
-                            if a in dish["name"] or a in dish["taboo"]:
-                                has_allergy = True
+            try:
+                for menu in menu_db[target_taste]:
+                    has_allergy = False
+                    for meal in ["breakfast", "lunch", "dinner"]:
+                        for dish in menu[meal]:
+                            for a in allergy_list:
+                                if a in dish["name"] or a in dish["taboo"]:
+                                    has_allergy = True
+                                    break
+                            if has_allergy:
                                 break
                         if has_allergy:
                             break
-                    if has_allergy:
-                        break
-                if not has_allergy:
-                    valid_menus.append(menu)
+                    if not has_allergy:
+                        valid_menus.append(menu)
+            except:
+                valid_menus = menu_db["清淡"] if "清淡" in menu_db else []
             
             # 随机选一个有效套餐
-            selected_menu = random.choice(valid_menus) if valid_menus else random.choice(menu_db[target_taste])
+            if valid_menus:
+                selected_menu = random.choice(valid_menus)
+            else:
+                # 如果没有有效套餐，默认用第一个清淡套餐
+                selected_menu = menu_db["清淡"][0] if "清淡" in menu_db else list(menu_db.values())[0][0]
             
             # 生成Markdown内容
             res = f"### 🍜 一日三餐配餐方案（{target_taste}·{scene}·{crowd}）\n\n"
