@@ -3,104 +3,50 @@
     "普通人群": {
       "清淡": [
         {
-          "breakfast": [{"name": "椰浆糯米饭+水煮蛋", "cal": 320, "protein": 7.8, "origin": "泰国南部传统早餐", "suitable": "一般人群", "taboo": "椰子过敏者慎食"}],
-          "lunch": [{"name": "椰汁嫩鸡汤+清炒空心菜", "cal": 380, "protein": 23.0, "origin": "泰国中部经典汤品", "suitable": "体质虚弱者", "taboo": "椰子过敏者禁食"}],
-          "dinner": [{"name": "香茅蒸鸡+糙米饭", "cal": 390, "protein": 29.0, "origin": "泰式蒸菜，清香鲜嫩", "suitable": "一般人群", "taboo": "鸡肉过敏者禁食"}],
-          "tip": "泰式椰浆菜品热量较高，适量食用"
-        },
-        {
-          "breakfast": [{"name": "泰式南瓜粥", "cal": 210, "protein": 4.2, "origin": "泰式养生粥品", "suitable": "肠胃虚弱者", "taboo": "无特殊忌口"}],
-          "lunch": [{"name": "清汤牛腩+凉拌黄瓜", "cal": 315, "protein": 25.3, "origin": "泰式清汤料理", "suitable": "一般人群", "taboo": "牛肉过敏者禁食"}],
-          "dinner": [{"name": "蔬菜豆腐汤+香兰糯米饭", "cal": 305, "protein": 8.3, "origin": "清淡汤品", "suitable": "所有人群", "taboo": "大豆过敏者慎食"}],
-          "tip": "香兰糯米饭有独特的清香"
-        },
-        {
-          "breakfast": [{"name": "鸡肉糯米饭(少油)", "cal": 290, "protein": 8.5, "origin": "泰国街头早餐", "suitable": "一般人群", "taboo": "鸡肉过敏者禁食"}],
-          "lunch": [{"name": "白煮鸡胸+泰式杂蔬沙拉", "cal": 255, "protein": 33.8, "origin": "健康减脂菜品", "suitable": "健身人群", "taboo": "鸡肉过敏者禁食"}],
-          "dinner": [{"name": "山药鸡汤+糙米", "cal": 230, "protein": 11.0, "origin": "泰式养生汤", "suitable": "体质虚弱者", "taboo": "鸡肉过敏者禁食"}],
-          "tip": "少油版糯米饭更健康"
-        }
-      ],
-      "微辣": [
-        {
-          "breakfast": [{"name": "泰北微辣鸡肉粥", "cal": 280, "protein": 9.2, "origin": "泰北传统早餐", "suitable": "一般人群", "taboo": "鸡肉过敏者禁食"}],
-          "lunch": [{"name": "黄咖喱鸡+菠萝饭", "cal": 640, "protein": 29.7, "origin": "泰国中部经典菜，微辣椰香", "suitable": "一般人群", "taboo": "椰子、鸡肉、菠萝过敏者慎食"}],
-          "dinner": [{"name": "罗勒牛肉+清炒芥蓝", "cal": 375, "protein": 27.8, "origin": "泰式家常菜", "suitable": "一般人群", "taboo": "牛肉过敏者禁食"}],
-          "tip": "黄咖喱椰香浓郁，搭配菠萝饭口感更佳"
-        },
-        {
-          "breakfast": [{"name": "肉末河粉(少量青咖喱)", "cal": 270, "protein": 8.7, "origin": "泰式河粉", "suitable": "一般人群", "taboo": "大米过敏者慎食"}],
-          "lunch": [{"name": "椰香炖排骨+凉拌生菜", "cal": 340, "protein": 23.8, "origin": "泰式炖菜", "suitable": "一般人群", "taboo": "椰子过敏者慎食"}],
-          "dinner": [{"name": "蘑菇炒肉片+冬瓜汤", "cal": 250, "protein": 16.0, "origin": "泰式家常菜", "suitable": "一般人群", "taboo": "蘑菇过敏者慎食"}],
-          "tip": "青咖喱微辣，适合不能吃太辣的人"
-        },
-        {
-          "breakfast": [{"name": "香蕉煎饼+鸡肉碎", "cal": 300, "protein": 6.5, "origin": "泰国街头小吃", "suitable": "年轻人", "taboo": "香蕉过敏者慎食"}],
-          "lunch": [{"name": "土豆黄咖喱牛肉+糯米饭", "cal": 530, "protein": 24.4, "origin": "泰式咖喱菜", "suitable": "一般人群", "taboo": "牛肉、椰子过敏者禁食"}],
-          "dinner": [{"name": "香茅炒鸡胸+时蔬", "cal": 330, "protein": 30.5, "origin": "泰式炒菜", "suitable": "健身人群", "taboo": "鸡肉过敏者禁食"}],
-          "tip": "香蕉煎饼香甜可口，是泰国必尝小吃"
-        }
-      ],
-      "酸辣": [
-        {
-          "breakfast": [{"name": "酸辣猪肉河粉", "cal": 305, "protein": 12.0, "origin": "泰式经典河粉", "suitable": "喜欢酸辣的人群", "taboo": "肠胃疾病患者慎食"}],
-          "lunch": [{"name": "鸡肉冬阴功+青木瓜沙拉", "cal": 260, "protein": 16.0, "origin": "泰国国汤，酸辣鲜香", "suitable": "食欲不振者", "taboo": "肠胃疾病患者、孕妇慎食"}],
-          "dinner": [{"name": "酸辣肉末沙拉+糯米饭", "cal": 430, "protein": 21.7, "origin": "泰式沙拉", "suitable": "喜欢酸辣的人群", "taboo": "肠胃疾病患者慎食"}],
-          "tip": "冬阴功汤酸辣开胃，是泰国必尝美食"
-        },
-        {
-          "breakfast": [{"name": "酸辣粉丝汤+炸春卷", "cal": 290, "protein": 8.3, "origin": "泰式小吃组合", "suitable": "一般人群", "taboo": "肠胃疾病患者慎食"}],
-          "lunch": [{"name": "青木瓜牛肉沙拉+糙米饭", "cal": 320, "protein": 22.4, "origin": "泰式沙拉", "suitable": "减脂人群", "taboo": "牛肉、木瓜过敏者慎食"}],
-          "dinner": [{"name": "酸辣鸡汤+炒空心菜", "cal": 280, "protein": 16.8, "origin": "泰式酸辣汤", "suitable": "食欲不振者", "taboo": "鸡肉过敏者、肠胃疾病患者慎食"}],
-          "tip": "青木瓜沙拉清爽解腻"
-        },
-        {
-          "breakfast": [{"name": "泰式酸辣馄饨", "cal": 265, "protein": 9.4, "origin": "泰式馄饨", "suitable": "喜欢酸辣的人群", "taboo": "小麦过敏者慎食"}],
-          "lunch": [{"name": "酸咖喱炖鸡+凉拌豆芽", "cal": 275, "protein": 20.8, "origin": "泰国南部咖喱", "suitable": "喜欢酸辣的人群", "taboo": "鸡肉过敏者慎食"}],
-          "dinner": [{"name": "酸辣炒猪肉+玉米", "cal": 370, "protein": 24.8, "origin": "泰式家常菜", "suitable": "一般人群", "taboo": "猪肉过敏者慎食"}],
-          "tip": "酸咖喱口味独特，值得一试"
-        }
-      ],
-      "重辣": [
-        {
-          "breakfast": [{"name": "泰北辣肠糯米饭", "cal": 330, "protein": 13.0, "origin": "泰北特色早餐", "suitable": "喜欢重辣的人群", "taboo": "肠胃疾病患者慎食"}],
-          "lunch": [{"name": "红咖喱辣猪肉+凉拌菜", "cal": 350, "protein": 22.0, "origin": "泰国中部重辣咖喱", "suitable": "喜欢重辣的人群", "taboo": "椰子、猪肉过敏者慎食"}],
-          "dinner": [{"name": "重辣罗勒炒鸡+糙米饭", "cal": 400, "protein": 29.5, "origin": "泰式重辣家常菜", "suitable": "喜欢重辣的人群", "taboo": "鸡肉过敏者、肠胃疾病患者慎食"}],
-          "tip": "泰式重辣菜品刺激性强，肠胃弱者请勿尝试"
-        },
-        {
-          "breakfast": [{"name": "重辣肉末米粉", "cal": 285, "protein": 10.2, "origin": "泰式米粉", "suitable": "喜欢重辣的人群", "taboo": "大米过敏者慎食"}],
-          "lunch": [{"name": "泰式辣炒牛腩+青瓜沙拉", "cal": 390, "protein": 29.6, "origin": "泰式炒菜", "suitable": "喜欢重辣的人群", "taboo": "牛肉过敏者、肠胃疾病患者慎食"}],
-          "dinner": [{"name": "魔鬼椒烤鸡+时蔬", "cal": 420, "protein": 34.7, "origin": "泰式重辣烤鸡", "suitable": "喜欢重辣的人群", "taboo": "鸡肉过敏者、肠胃疾病患者慎食"}],
-          "tip": "魔鬼椒非常辣，谨慎尝试"
-        },
-        {
-          "breakfast": [{"name": "辣椰浆面", "cal": 310, "protein": 8.7, "origin": "泰国南部特色面", "suitable": "喜欢重辣的人群", "taboo": "椰子过敏者慎食"}],
-          "lunch": [{"name": "红咖喱排骨+凉拌木瓜", "cal": 410, "protein": 26.8, "origin": "泰式咖喱菜", "suitable": "喜欢重辣的人群", "taboo": "椰子、排骨过敏者慎食"}],
-          "dinner": [{"name": "辣炒碎肉+糙米饭", "cal": 370, "protein": 25.2, "origin": "泰式家常菜", "suitable": "喜欢重辣的人群", "taboo": "猪肉过敏者慎食"}],
-          "tip": "辣椰浆面椰香与辣味结合，口感独特"
-        }
-      ]
-    },
-    "减脂人群": {
-      "清淡": [
-        {
-          "breakfast": [{"name": "泰式南瓜粥", "cal": 210, "protein": 4.2, "origin": "泰式养生粥", "suitable": "减脂人群", "taboo": "无特殊忌口"}],
-          "lunch": [{"name": "白煮鸡胸+泰式杂蔬沙拉", "cal": 255, "protein": 33.8, "origin": "低卡泰餐", "suitable": "减脂人群", "taboo": "鸡肉过敏者禁食"}],
-          "dinner": [{"name": "山药鸡汤+糙米", "cal": 230, "protein": 11.0, "origin": "泰式养生汤", "suitable": "减脂人群", "taboo": "鸡肉过敏者禁食"}],
-          "tip": "避免椰浆、油炸泰式小吃，选择清蒸、水煮菜品"
-        },
-        {
-          "breakfast": [{"name": "无糖椰子水+水煮蛋", "cal": 89, "protein": 6.4, "origin": "天然饮品+高蛋白", "suitable": "减脂人群", "taboo": "椰子、鸡蛋过敏者慎食"}],
-          "lunch": [{"name": "清蒸鲈鱼+清炒空心菜", "cal": 320, "protein": 28.5, "origin": "低卡高蛋白", "suitable": "减脂人群", "taboo": "鱼类过敏者禁食"}],
-          "dinner": [{"name": "蔬菜豆腐汤+糙米饭", "cal": 195, "protein": 8.5, "origin": "清淡汤饭", "suitable": "减脂人群", "taboo": "大豆过敏者慎食"}],
-          "tip": "椰子水是天然电解质饮料，适合运动后饮用"
-        },
-        {
-          "breakfast": [{"name": "泰式杂蔬粥", "cal": 190, "protein": 4.5, "origin": "清淡养生粥", "suitable": "减脂人群", "taboo": "无特殊忌口"}],
-          "lunch": [{"name": "香茅烤鸡胸+沙拉", "cal": 280, "protein": 31.2, "origin": "低卡烤鸡", "suitable": "减脂人群", "taboo": "鸡肉过敏者禁食"}],
-          "dinner": [{"name": "冬瓜海带汤+玉米", "cal": 125, "protein": 4.8, "origin": "低卡汤品", "suitable": "减脂人群", "taboo": "海带过敏者慎食"}],
-          "tip": "香茅烤鸡香气浓郁，脂肪含量低"
+          "breakfast": [
+            {
+              "name_cn": "椰浆糯米饭+水煮蛋",
+              "name_th": "ข้าวเหนียวมะพร้าว+ไข่ต้ม",
+              "cal": 320,
+              "protein": 7.8,
+              "origin_cn": "泰国南部传统早餐",
+              "origin_th": "อาหารเช้าพื้นเมืองภาคใต้ของไทย",
+              "suitable_cn": "一般人群",
+              "suitable_th": "เหมาะกับคนทั่วไป",
+              "taboo_cn": "椰子过敏者慎食",
+              "taboo_th": "คนแพ้มะพร้าวห้ามกิน"
+            }
+          ],
+          "lunch": [
+            {
+              "name_cn": "椰汁嫩鸡汤+清炒空心菜",
+              "name_th": "ต้มข่าไก่+ผักบุ้งผัดน้ำมัน",
+              "cal": 380,
+              "protein": 23.0,
+              "origin_cn": "泰国中部经典汤品",
+              "origin_th": "ซุปคลาสสิกแห่งภาคกลางไทย",
+              "suitable_cn": "体质虚弱者",
+              "suitable_th": "เหมาะกับคนอ่อนแอ",
+              "taboo_cn": "椰子过敏者禁食",
+              "taboo_th": "คนแพ้มะพร้าวห้ามกิน"
+            }
+          ],
+          "dinner": [
+            {
+              "name_cn": "香茅蒸鸡+糙米饭",
+              "name_th": "ไก่นึ่งตะไคร้+ข้าวกล้อง",
+              "cal": 390,
+              "protein": 29.0,
+              "origin_cn": "泰式蒸菜，清香鲜嫩",
+              "origin_th": "อาหารนึ่งสไตล์ไทย หอมนุ่มอร่อย",
+              "suitable_cn": "一般人群",
+              "suitable_th": "เหมาะกับคนทั่วไป",
+              "taboo_cn": "鸡肉过敏者禁食",
+              "taboo_th": "คนแพ้ไก่ห้ามกิน"
+            }
+          ],
+          "tip_cn": "泰式椰浆菜品热量较高，适量食用",
+          "tip_th": "อาหารไทยที่ใช้กะทิมีแคลอรี่สูง ควรกินตามปริมาณ"
         }
       ]
     }
@@ -109,88 +55,50 @@
     "普通人群": {
       "清淡": [
         {
-          "breakfast": [{"name": "泰式香蕉煎饼", "cal": 280, "protein": 4.2, "origin": "泰国街头小吃，香甜酥脆", "suitable": "年轻人", "taboo": "香蕉过敏者慎食"}],
-          "lunch": [{"name": "鸡肉盖浇饭+椰子水", "cal": 399, "protein": 22.7, "origin": "泰式快餐，方便快捷", "suitable": "出行人群", "taboo": "鸡肉、椰子过敏者慎食"}],
-          "dinner": [{"name": "泰式炒河粉+芒果", "cal": 360, "protein": 11.5, "origin": "泰国国民美食", "suitable": "一般人群", "taboo": "大米、芒果过敏者慎食"}],
-          "tip": "泰国街头小吃注意卫生，避免生食海鲜"
-        },
-        {
-          "breakfast": [{"name": "泰式豆浆+油条", "cal": 270, "protein": 6.3, "origin": "泰式早餐", "suitable": "一般人群", "taboo": "大豆、小麦过敏者慎食"}],
-          "lunch": [{"name": "叉烧饭+矿泉水", "cal": 420, "protein": 18.7, "origin": "粤式泰式融合快餐", "suitable": "出行人群", "taboo": "猪肉过敏者慎食"}],
-          "dinner": [{"name": "海南鸡饭+山竹", "cal": 410, "protein": 25.3, "origin": "新加坡泰国经典美食", "suitable": "一般人群", "taboo": "鸡肉过敏者禁食"}],
-          "tip": "海南鸡饭搭配鸡油饭，口感更佳"
-        },
-        {
-          "breakfast": [{"name": "糯米饭+芒果", "cal": 310, "protein": 3.7, "origin": "泰国经典早餐", "suitable": "年轻人", "taboo": "芒果过敏者慎食"}],
-          "lunch": [{"name": "猪排饭+冰奶茶", "cal": 480, "protein": 19.2, "origin": "泰式快餐", "suitable": "一般人群", "taboo": "猪肉、牛奶过敏者慎食"}],
-          "dinner": [{"name": "海鲜炒饭+椰子", "cal": 450, "protein": 12.8, "origin": "泰式经典炒饭", "suitable": "一般人群", "taboo": "海鲜、椰子过敏者慎食"}],
-          "tip": "芒果糯米饭是泰国标志性甜品"
-        }
-      ],
-      "微辣": [
-        {
-          "breakfast": [{"name": "泰式肉末粥", "cal": 260, "protein": 8.7, "origin": "泰式早餐，暖胃易消化", "suitable": "一般人群", "taboo": "猪肉过敏者慎食"}],
-          "lunch": [{"name": "黄咖喱牛肉饭+冰奶茶", "cal": 540, "protein": 22.5, "origin": "泰式快餐", "suitable": "一般人群", "taboo": "牛肉、椰子、牛奶过敏者慎食"}],
-          "dinner": [{"name": "罗勒猪肉盖浇饭+菠萝", "cal": 391, "protein": 21.3, "origin": "泰式国民快餐", "suitable": "一般人群", "taboo": "猪肉、菠萝过敏者慎食"}],
-          "tip": "泰式奶茶甜度较高，可要求少糖"
-        },
-        {
-          "breakfast": [{"name": "泰式辣炒米粉", "cal": 290, "protein": 7.5, "origin": "泰式早餐，微辣", "suitable": "喜欢微辣的人群", "taboo": "大米过敏者慎食"}],
-          "lunch": [{"name": "绿咖喱鸡饭+冰咖啡", "cal": 460, "protein": 20.8, "origin": "泰式咖喱快餐", "suitable": "一般人群", "taboo": "椰子、鸡肉、咖啡因过敏者慎食"}],
-          "dinner": [{"name": "酸辣汤面+香蕉", "cal": 345, "protein": 12.6, "origin": "泰式汤面", "suitable": "喜欢酸辣的人群", "taboo": "小麦、肠胃疾病患者慎食"}],
-          "tip": "绿咖喱比黄咖喱更辣"
-        },
-        {
-          "breakfast": [{"name": "泰式包子+豆浆", "cal": 250, "protein": 6.8, "origin": "泰式早餐", "suitable": "一般人群", "taboo": "小麦、大豆过敏者慎食"}],
-          "lunch": [{"name": "冬阴功汤面+椰子水", "cal": 395, "protein": 14.7, "origin": "泰国国汤面", "suitable": "喜欢酸辣的人群", "taboo": "大米、椰子、肠胃疾病患者慎食"}],
-          "dinner": [{"name": "泰式炒面+西瓜", "cal": 325, "protein": 9.8, "origin": "泰式经典面食", "suitable": "一般人群", "taboo": "小麦过敏者慎食"}],
-          "tip": "冬阴功汤面酸辣过瘾"
-        }
-      ],
-      "酸辣": [
-        {
-          "breakfast": [{"name": "酸辣粉丝汤", "cal": 220, "protein": 5.8, "origin": "泰式小吃，酸辣开胃", "suitable": "食欲不振者", "taboo": "肠胃疾病患者慎食"}],
-          "lunch": [{"name": "冬阴功汤面+椰子水", "cal": 395, "protein": 14.7, "origin": "泰国国汤面", "suitable": "喜欢酸辣的人群", "taboo": "大米、椰子、肠胃疾病患者慎食"}],
-          "dinner": [{"name": "青木瓜沙拉+糯米饭", "cal": 300, "protein": 6.8, "origin": "泰式经典组合", "suitable": "减脂人群", "taboo": "木瓜过敏者慎食"}],
-          "tip": "冬阴功汤酸辣开胃"
-        }
-      ],
-      "重辣": [
-        {
-          "breakfast": [{"name": "泰式辣炒米粉", "cal": 290, "protein": 7.5, "origin": "泰式早餐，重辣", "suitable": "喜欢重辣的人群", "taboo": "大米、肠胃疾病患者慎食"}],
-          "lunch": [{"name": "红咖喱鸡肉饭+冰咖啡", "cal": 410, "protein": 19.7, "origin": "泰式重辣快餐", "suitable": "喜欢重辣的人群", "taboo": "椰子、鸡肉、咖啡因过敏者慎食"}],
-          "dinner": [{"name": "重辣罗勒鸡肉饭+西瓜", "cal": 360, "protein": 23.2, "origin": "泰式重辣快餐", "suitable": "喜欢重辣的人群", "taboo": "鸡肉过敏者、肠胃疾病患者慎食"}],
-          "tip": "泰式重辣菜品刺激性强，肠胃弱者请勿尝试"
-        }
-      ]
-    },
-    "过敏体质": {
-      "清淡": [
-        {
-          "breakfast": [{"name": "白粥+水煮蛋", "cal": 180, "protein": 6.5, "origin": "低敏便携早餐", "suitable": "过敏体质", "taboo": "鸡蛋过敏者禁食"}],
-          "lunch": [{"name": "白切鸡饭+矿泉水", "cal": 390, "protein": 30.6, "origin": "清淡快餐，无复杂调料", "suitable": "过敏体质", "taboo": "鸡肉过敏者禁食"}],
-          "dinner": [{"name": "土豆丝盖浇饭+香蕉", "cal": 320, "protein": 4.5, "origin": "清淡快餐", "suitable": "过敏体质", "taboo": "无特殊忌口"}],
-          "tip": "选择连锁餐厅，主动告知服务员过敏情况"
-        }
-      ]
-    },
-    "减脂人群": {
-      "清淡": [
-        {
-          "breakfast": [{"name": "无糖椰子水+水煮蛋", "cal": 89, "protein": 6.4, "origin": "天然饮品+高蛋白", "suitable": "减脂人群", "taboo": "椰子、鸡蛋过敏者慎食"}],
-          "lunch": [{"name": "鸡胸肉沙拉+糙米饭", "cal": 320, "protein": 28.5, "origin": "减脂沙拉餐", "suitable": "减脂人群", "taboo": "鸡肉过敏者禁食"}],
-          "dinner": [{"name": "凉拌黄瓜+玉米", "cal": 95, "protein": 4.2, "origin": "低卡晚餐", "suitable": "减脂人群", "taboo": "无特殊忌口"}],
-          "tip": "避免椰浆、油炸食品，选择无糖饮品"
-        }
-      ]
-    },
-    "老人儿童": {
-      "清淡": [
-        {
-          "breakfast": [{"name": "泰式南瓜粥", "cal": 210, "protein": 4.2, "origin": "温和早餐，易消化", "suitable": "老人、儿童", "taboo": "无特殊忌口"}],
-          "lunch": [{"name": "鸡肉盖浇饭+香蕉", "cal": 399, "protein": 22.7, "origin": "清淡快餐", "suitable": "老人、儿童", "taboo": "鸡肉过敏者禁食"}],
-          "dinner": [{"name": "白粥+蒸蛋", "cal": 180, "protein": 8.2, "origin": "易消化晚餐", "suitable": "老人、儿童", "taboo": "鸡蛋过敏者禁食"}],
-          "tip": "出行携带保温杯，避免生冷食物"
+          "breakfast": [
+            {
+              "name_cn": "泰式香蕉煎饼",
+              "name_th": "โรตีกล้วย",
+              "cal": 280,
+              "protein": 4.2,
+              "origin_cn": "泰国街头小吃，香甜酥脆",
+              "origin_th": "ขนมถนนไทย หวานกรอบอร่อย",
+              "suitable_cn": "年轻人",
+              "suitable_th": "เหมาะกับคนหนุ่มสาว",
+              "taboo_cn": "香蕉过敏者慎食",
+              "taboo_th": "คนแพ้กล้วยห้ามกิน"
+            }
+          ],
+          "lunch": [
+            {
+              "name_cn": "鸡肉盖浇饭+椰子水",
+              "name_th": "ข้าวราดไก่+น้ำมะพร้าว",
+              "cal": 399,
+              "protein": 22.7,
+              "origin_cn": "泰式快餐，方便快捷",
+              "origin_th": "อาหารเร็วสไตล์ไทย รวดเร็วสะดวก",
+              "suitable_cn": "出行人群",
+              "suitable_th": "เหมาะกับคนเดินทาง",
+              "taboo_cn": "鸡肉、椰子过敏者慎食",
+              "taboo_th": "คนแพ้ไก่และมะพร้าวห้ามกิน"
+            }
+          ],
+          "dinner": [
+            {
+              "name_cn": "泰式炒河粉+芒果",
+              "name_th": "ผัดไทย+มะม่วง",
+              "cal": 360,
+              "protein": 11.5,
+              "origin_cn": "泰国国民美食",
+              "origin_th": "อาหารแห่งชาติของไทย",
+              "suitable_cn": "一般人群",
+              "suitable_th": "เหมาะกับคนทั่วไป",
+              "taboo_cn": "大米、芒果过敏者慎食",
+              "taboo_th": "คนแพ้ข้าวและมะม่วงห้ามกิน"
+            }
+          ],
+          "tip_cn": "泰国街头小吃注意卫生，避免生食海鲜",
+          "tip_th": "ขนมถนนไทยต้องระมัดระวังความสะอาด หลีกเลี่ยงอาหารทะเลดิบ"
         }
       ]
     }
