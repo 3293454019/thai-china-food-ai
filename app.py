@@ -6,6 +6,190 @@ import time
 from PIL import Image
 from ultralytics import YOLO
 
+# ===================== 全局界面美化配置 =====================
+st.set_page_config(
+    page_title="中泰AI智能营养配餐",
+    page_icon="🍜",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# 自定义CSS样式（美食主题暖色调）
+st.markdown("""
+<style>
+/* 全局背景和字体 */
+.stApp {
+    background: linear-gradient(135deg, #fef9f3 0%, #fff5e6 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 主标题样式 */
+h1 {
+    color: #d35400;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 卡片容器样式 */
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+    border: 1px solid #f0e6d6;
+}
+
+/* 子标题样式 */
+h2, h3 {
+    color: #e67e22;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* 输入框样式 */
+.stNumberInput > div > div > input {
+    border-radius: 10px;
+    border: 2px solid #f3d7b7;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.stNumberInput > div > div > input:focus {
+    border-color: #e67e22;
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+}
+
+/* 单选按钮样式 */
+.stRadio > div {
+    gap: 0.75rem;
+}
+
+.stRadio > div > label {
+    background: #fff9f0;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #f3d7b7;
+    transition: all 0.3s ease;
+}
+
+.stRadio > div > label:hover {
+    background: #fff0e0;
+    border-color: #e67e22;
+}
+
+.stRadio > div > label[data-baseweb="radio"]:has(input:checked) {
+    background: #e67e22;
+    color: white;
+    border-color: #d35400;
+}
+
+/* 按钮样式 */
+.stButton > button {
+    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
+    width: 100%;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(230, 126, 34, 0.4);
+    background: linear-gradient(135deg, #d35400 0%, #c0392b 100%);
+}
+
+/* 标签页样式 */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 1rem;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    color: #7f8c8d;
+    transition: all 0.3s ease;
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
+}
+
+/* 侧边栏样式 */
+.css-1d391kg {
+    background: white;
+    border-right: 1px solid #f0e6d6;
+}
+
+/* 下拉框样式 */
+.stSelectbox > div > div {
+    border-radius: 10px;
+    border: 2px solid #f3d7b7;
+}
+
+.stSelectbox > div > div:focus {
+    border-color: #e67e22;
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+}
+
+/* 文件上传和相机输入样式 */
+.stFileUploader > div, .stCameraInput > div {
+    border-radius: 12px;
+    border: 2px dashed #f3d7b7;
+    background: #fff9f0;
+    transition: all 0.3s ease;
+}
+
+.stFileUploader > div:hover, .stCameraInput > div:hover {
+    border-color: #e67e22;
+    background: #fff0e0;
+}
+
+/* 展开面板样式 */
+.streamlit-expanderHeader {
+    background: #fff9f0;
+    border-radius: 10px;
+    border: 1px solid #f3d7b7;
+    font-weight: 600;
+    color: #d35400;
+}
+
+.streamlit-expanderContent {
+    background: white;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #f3d7b7;
+    border-top: none;
+}
+
+/* 进度条样式 */
+.stProgress > div > div {
+    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+}
+
+/* 错误和信息提示样式 */
+.stAlert {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+</style>
+""", unsafe_allow_html=True)
+
 # 中泰双语翻译（新增菜品识别词条）
 trans = {
     "中文": {
@@ -166,10 +350,11 @@ def load_dishes(filename):
     except:
         return None
 
-# 页面配置
-st.set_page_config(page_title="中泰营养配餐AI", layout="wide")
+# 语言选择
 lang = st.sidebar.selectbox("语言 / ภาษา", ["中文", "ภาษาไทย"])
 t = trans[lang]
+
+# 主标题
 st.title(t["title"])
 
 # 加载所有数据
@@ -186,22 +371,30 @@ if not cn_dishes or not thai_dishes:
 # 创建标签页（原有配餐功能+新增本地识别功能）
 tab1, tab2 = st.tabs(["🍜 智能配餐", "📷 本地AI菜品识别"])
 
-# ===================== 标签页1：原有智能配餐功能（完全保留，一字未改） =====================
+# ===================== 标签页1：智能配餐功能 =====================
 with tab1:
     col1, col2 = st.columns([1, 2])
+    
     with col1:
+        # 个人信息卡片
+        st.markdown('<div class="card">', unsafe_allow_html=True)
         st.subheader("个人信息")
+        
         height = st.number_input(t["height"], min_value=100, max_value=220, value=161)
         weight = st.number_input(t["weight"], min_value=30, max_value=150, value=45)
         age = st.number_input(t["age"], min_value=10, max_value=100, value=20)
         gender = st.radio(t["gender"], t["gender_options"])
+        
+        st.markdown("---")
         
         scene = st.radio(t["scene"], t["scene_options"], help=t["scene_tip"])
         crowd = st.radio(t["crowd"], t["crowd_options"], help=t["crowd_tip"])
         taste = st.selectbox(t["taste"], t["taste_options"])
         allergy = st.text_input(t["allergy"], placeholder=t["allergy_placeholder"])
         cuisine = st.radio(t["cuisine"], t["cuisine_options"])
-
+        
+        st.markdown("---")
+        
         # 生成按钮
         if st.button(t["generate"], type="primary", key="gen_btn"):
             if "result" in st.session_state:
@@ -339,14 +532,21 @@ with tab1:
                 
                 st.session_state["result"] = res
                 st.rerun()
+        
+        st.markdown('</div>', unsafe_allow_html=True)
 
     with col2:
         if "result" in st.session_state:
+            # 结果展示卡片
+            st.markdown('<div class="card">', unsafe_allow_html=True)
             st.subheader(t["result"])
             st.markdown(st.session_state["result"])
+            st.markdown('</div>', unsafe_allow_html=True)
 
-# ===================== 标签页2：新增本地AI菜品识别功能 =====================
+# ===================== 标签页2：本地AI菜品识别功能 =====================
 with tab2:
+    # 识别功能卡片
+    st.markdown('<div class="card">', unsafe_allow_html=True)
     st.subheader(t["recognition"])
     
     # 检查模型是否加载成功
@@ -369,7 +569,7 @@ with tab2:
         
         # 显示图片和识别按钮
         if image is not None:
-            st.image(image, width=400)
+            st.image(image, width=400, use_column_width=True)
             
             if st.button(t["recognize"], type="primary", key="rec_btn"):
                 with st.spinner(t["recognizing"]):
@@ -392,3 +592,5 @@ with tab2:
                         st.error(t["no_result"])
         else:
             st.info(t["upload_image"] + " 或 " + t["take_photo"])
+    
+    st.markdown('</div>', unsafe_allow_html=True)
