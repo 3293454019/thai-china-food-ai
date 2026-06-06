@@ -53,7 +53,7 @@ trans = {
         "carbohydrate": "碳水化合物",
         "confidence": "置信度",
         "no_result": "未识别到菜品，请上传清晰的菜品图片",
-        "model_error": "模型加载失败，请确保yolov8n-food101.pt在同一目录"
+        "model_error": "模型加载失败，请确保yolov8n.pt在同一目录"
     },
     "ภาษาไทย": {
         "title": "ระบบ AI สร้างเมนูอาหารและวัฒนธรรมอาหารจีน-ไทย",
@@ -100,15 +100,16 @@ trans = {
         "carbohydrate": "คาร์โบไฮเดรต",
         "confidence": "ความมั่นใจ",
         "no_result": "ไม่พบอาหาร กรุณาอัปโหลดรูปภาพอาหารที่ชัดเจน",
-        "model_error": "โหลดโมเดลล้มเหลว กรุณาตรวจสอบไฟล์ yolov8n-food101.pt"
+        "model_error": "โหลดโมเดลล้มเหลว กรุณาตรวจสอบไฟล์ yolov8n.pt"
     }
 }
 
-# 加载本地YOLO菜品识别模型（只加载一次）
+# 加载本地YOLO菜品识别模型（自动下载，无需手动上传）
 @st.cache_resource
 def load_yolo_model():
     try:
-        return YOLO("yolov8n-food101.pt")
+        # 自动从官方下载yolov8n.pt模型，下载后自动缓存
+        return YOLO("yolov8n.pt")
     except:
         return None
 
