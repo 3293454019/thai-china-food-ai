@@ -104,13 +104,12 @@ trans = {
     }
 }
 
-# 加载专门的菜品识别模型（自动下载，无需手动上传）
+# 加载官方通用分类模型（100%能正常下载）
 @st.cache_resource
 def load_yolo_model():
     try:
-        # 自动下载专门在Food101数据集上训练的菜品识别模型
-        # 模型大小约6MB，下载后自动缓存
-        return YOLO("keremberke/yolov8n-food-classification")
+        # 使用官方yolov8n分类模型，自动下载，大小约6MB
+        return YOLO("yolov8n-cls.pt")
     except Exception as e:
         st.error(f"模型加载失败：{str(e)}")
         return None
@@ -126,13 +125,13 @@ def load_nutrition_db():
     except:
         return {}
 
-# 本地菜品识别函数（适配分类模型）
+# 本地菜品识别函数（适配官方分类模型）
 def recognize_dish_local(image, model, nutrition_db, lang):
-    results = model(image, conf=0.3)  # 置信度阈值0.3
+    results = model(image, conf=0.2)  # 降低置信度阈值，提高识别率
     recognized_dishes = []
     
     for result in results:
-        # 分类模型的输出格式
+        # 分类模型的标准输出格式
         top5_indices = result.probs.top5
         top5_confidences = result.probs.top5conf
         
