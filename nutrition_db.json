@@ -1,0 +1,794 @@
+{
+  "apple_pie": {
+    "name_cn": "苹果派",
+    "name_th": "พายแอปเปิ้ล",
+    "cal": 237,
+    "protein": 2.4,
+    "fat": 11.1,
+    "carb": 32.6
+  },
+  "baby_back_ribs": {
+    "name_cn": "烤肋排",
+    "name_th": "ซี่โครงหมูย่าง",
+    "cal": 320,
+    "protein": 28.5,
+    "fat": 21.3,
+    "carb": 0.8
+  },
+  "baklava": {
+    "name_cn": "巴克拉瓦",
+    "name_th": "บากลาวา",
+    "cal": 480,
+    "protein": 7.5,
+    "fat": 27.8,
+    "carb": 53.2
+  },
+  "beef_carpaccio": {
+    "name_cn": "生牛肉片",
+    "name_th": "เนื้อวัวแผ่นดิบ",
+    "cal": 150,
+    "protein": 25.3,
+    "fat": 4.2,
+    "carb": 0.5
+  },
+  "beef_tartare": {
+    "name_cn": "鞑靼牛肉",
+    "name_th": "เนื้อวัวทาร์ตาร์",
+    "cal": 210,
+    "protein": 22.8,
+    "fat": 12.5,
+    "carb": 1.2
+  },
+  "beet_salad": {
+    "name_cn": "甜菜沙拉",
+    "name_th": "สลัดบีตรูท",
+    "cal": 85,
+    "protein": 2.1,
+    "fat": 3.2,
+    "carb": 12.8
+  },
+  "beignets": {
+    "name_cn": "贝涅饼",
+    "name_th": "เบญเยต",
+    "cal": 310,
+    "protein": 5.8,
+    "fat": 15.6,
+    "carb": 38.2
+  },
+  "bibimbap": {
+    "name_cn": "石锅拌饭",
+    "name_th": "บิบิมบับ",
+    "cal": 490,
+    "protein": 18.5,
+    "fat": 18.2,
+    "carb": 62.3
+  },
+  "bread_pudding": {
+    "name_cn": "面包布丁",
+    "name_th": "พุดดิ้งขนมปัง",
+    "cal": 290,
+    "protein": 6.2,
+    "fat": 12.5,
+    "carb": 38.7
+  },
+  "breakfast_burrito": {
+    "name_cn": "早餐卷饼",
+    "name_th": "เบอร์ริโต้อาหารเช้า",
+    "cal": 520,
+    "protein": 20.3,
+    "fat": 25.8,
+    "carb": 51.2
+  },
+  "bruschetta": {
+    "name_cn": "意式烤面包",
+    "name_th": "บรูสเกตต้า",
+    "cal": 120,
+    "protein": 3.5,
+    "fat": 5.2,
+    "carb": 15.8
+  },
+  "caesar_salad": {
+    "name_cn": "凯撒沙拉",
+    "name_th": "สลัดซีซาร์",
+    "cal": 190,
+    "protein": 7.8,
+    "fat": 14.2,
+    "carb": 8.5
+  },
+  "cannoli": {
+    "name_cn": "卡诺里",
+    "name_th": "คานโนลี",
+    "cal": 220,
+    "protein": 4.2,
+    "fat": 10.5,
+    "carb": 28.7
+  },
+  "caprese_salad": {
+    "name_cn": "卡普雷塞沙拉",
+    "name_th": "สลัดคาเปรเซ่",
+    "cal": 150,
+    "protein": 8.5,
+    "fat": 10.2,
+    "carb": 5.8
+  },
+  "carrot_cake": {
+    "name_cn": "胡萝卜蛋糕",
+    "name_th": "เค้กแครอท",
+    "cal": 350,
+    "protein": 4.8,
+    "fat": 18.5,
+    "carb": 43.2
+  },
+  "ceviche": {
+    "name_cn": "酸橘汁腌鱼",
+    "name_th": "เซวิเช่",
+    "cal": 120,
+    "protein": 20.5,
+    "fat": 2.8,
+    "carb": 3.2
+  },
+  "cheesecake": {
+    "name_cn": "芝士蛋糕",
+    "name_th": "ชีสเค้ก",
+    "cal": 320,
+    "protein": 5.8,
+    "fat": 20.3,
+    "carb": 31.5
+  },
+  "chicken_curry": {
+    "name_cn": "咖喱鸡",
+    "name_th": "แกงกะหรี่ไก่",
+    "cal": 280,
+    "protein": 22.5,
+    "fat": 15.2,
+    "carb": 12.8
+  },
+  "chicken_quesadilla": {
+    "name_cn": "鸡肉墨西哥卷饼",
+    "name_th": "เคซาดิย่าไก่",
+    "cal": 450,
+    "protein": 21.8,
+    "fat": 22.5,
+    "carb": 38.7
+  },
+  "chicken_wings": {
+    "name_cn": "鸡翅",
+    "name_th": "ปีกไก่",
+    "cal": 290,
+    "protein": 25.3,
+    "fat": 19.2,
+    "carb": 3.5
+  },
+  "chocolate_cake": {
+    "name_cn": "巧克力蛋糕",
+    "name_th": "เค้กช็อกโกแลต",
+    "cal": 370,
+    "protein": 5.2,
+    "fat": 18.5,
+    "carb": 48.7
+  },
+  "chocolate_mousse": {
+    "name_cn": "巧克力慕斯",
+    "name_th": "มูสช็อกโกแลต",
+    "cal": 250,
+    "protein": 4.8,
+    "fat": 18.2,
+    "carb": 20.5
+  },
+  "churros": {
+    "name_cn": "吉事果",
+    "name_th": "ชูโรส",
+    "cal": 280,
+    "protein": 3.5,
+    "fat": 15.2,
+    "carb": 32.8
+  },
+  "clam_chowder": {
+    "name_cn": "蛤蜊浓汤",
+    "name_th": "ซุปหอยแครง",
+    "cal": 180,
+    "protein": 8.5,
+    "fat": 9.2,
+    "carb": 15.8
+  },
+  "club_sandwich": {
+    "name_cn": "俱乐部三明治",
+    "name_th": "แซนด์วิชคลับ",
+    "cal": 420,
+    "protein": 18.5,
+    "fat": 18.2,
+    "carb": 42.5
+  },
+  "crab_cakes": {
+    "name_cn": "蟹饼",
+    "name_th": "เค้กปู",
+    "cal": 220,
+    "protein": 15.8,
+    "fat": 12.5,
+    "carb": 10.2
+  },
+  "creme_brulee": {
+    "name_cn": "焦糖布丁",
+    "name_th": "ครีมบรูเล่",
+    "cal": 280,
+    "protein": 4.5,
+    "fat": 15.8,
+    "carb": 30.2
+  },
+  "croque_madame": {
+    "name_cn": "火腿芝士蛋三明治",
+    "name_th": "คร็อกมาดาม",
+    "cal": 480,
+    "protein": 22.5,
+    "fat": 25.8,
+    "carb": 35.2
+  },
+  "cup_cakes": {
+    "name_cn": "纸杯蛋糕",
+    "name_th": "คัพเค้ก",
+    "cal": 250,
+    "protein": 3.2,
+    "fat": 12.5,
+    "carb": 32.8
+  },
+  "deviled_eggs": {
+    "name_cn": "魔鬼蛋",
+    "name_th": "ไข่ผัดพริก",
+    "cal": 120,
+    "protein": 6.5,
+    "fat": 8.2,
+    "carb": 2.8
+  },
+  "donuts": {
+    "name_cn": "甜甜圈",
+    "name_th": "โดนัท",
+    "cal": 260,
+    "protein": 3.8,
+    "fat": 14.2,
+    "carb": 30.5
+  },
+  "dumplings": {
+    "name_cn": "饺子",
+    "name_th": "เกี๊ยว",
+    "cal": 220,
+    "protein": 8.5,
+    "fat": 10.2,
+    "carb": 25.8
+  },
+  "edamame": {
+    "name_cn": "毛豆",
+    "name_th": "ถั่วแระ",
+    "cal": 120,
+    "protein": 11.2,
+    "fat": 5.8,
+    "carb": 8.5
+  },
+  "eggs_benedict": {
+    "name_cn": "班尼迪克蛋",
+    "name_th": "เอ็กซ์เบเนดิกต์",
+    "cal": 450,
+    "protein": 20.5,
+    "fat": 28.2,
+    "carb": 25.8
+  },
+  "escargots": {
+    "name_cn": "法式蜗牛",
+    "name_th": "หอยทากฝรั่งเศส",
+    "cal": 180,
+    "protein": 18.5,
+    "fat": 10.2,
+    "carb": 3.5
+  },
+  "falafel": {
+    "name_cn": "法拉费",
+    "name_th": "ฟาลาเฟล",
+    "cal": 320,
+    "protein": 12.5,
+    "fat": 15.8,
+    "carb": 35.2
+  },
+  "filet_mignon": {
+    "name_cn": "菲力牛排",
+    "name_th": "สเต็กฟีเลมิญอง",
+    "cal": 280,
+    "protein": 30.5,
+    "fat": 15.2,
+    "carb": 0.8
+  },
+  "fish_and_chips": {
+    "name_cn": "炸鱼薯条",
+    "name_th": "ปลาทอดมันฝรั่งทอด",
+    "cal": 580,
+    "protein": 22.5,
+    "fat": 32.8,
+    "carb": 48.5
+  },
+  "foie_gras": {
+    "name_cn": "鹅肝",
+    "name_th": "ตับห่าน",
+    "cal": 480,
+    "protein": 10.5,
+    "fat": 45.2,
+    "carb": 2.8
+  },
+  "french_fries": {
+    "name_cn": "薯条",
+    "name_th": "มันฝรั่งทอด",
+    "cal": 310,
+    "protein": 3.5,
+    "fat": 15.2,
+    "carb": 42.8
+  },
+  "french_toast": {
+    "name_cn": "法式吐司",
+    "name_th": "ทอสต์ฝรั่งเศส",
+    "cal": 280,
+    "protein": 6.5,
+    "fat": 12.8,
+    "carb": 35.2
+  },
+  "fried_calamari": {
+    "name_cn": "炸鱿鱼圈",
+    "name_th": "ปลาหมึกทอด",
+    "cal": 220,
+    "protein": 15.8,
+    "fat": 12.5,
+    "carb": 10.2
+  },
+  "fried_rice": {
+    "name_cn": "炒饭",
+    "name_th": "ข้าวผัด",
+    "cal": 350,
+    "protein": 8.5,
+    "fat": 15.2,
+    "carb": 45.8
+  },
+  "frozen_yogurt": {
+    "name_cn": "冻酸奶",
+    "name_th": "โยเกิร์ตแช่แข็ง",
+    "cal": 150,
+    "protein": 4.5,
+    "fat": 2.8,
+    "carb": 28.5
+  },
+  "garlic_bread": {
+    "name_cn": "蒜蓉面包",
+    "name_th": "ขนมปังกระเทียม",
+    "cal": 200,
+    "protein": 4.2,
+    "fat": 10.5,
+    "carb": 22.8
+  },
+  "gnocchi": {
+    "name_cn": "土豆团子",
+    "name_th": "ญ็อกกี",
+    "cal": 280,
+    "protein": 6.5,
+    "fat": 12.5,
+    "carb": 35.8
+  },
+  "greek_salad": {
+    "name_cn": "希腊沙拉",
+    "name_th": "สลัดกรีก",
+    "cal": 150,
+    "protein": 5.2,
+    "fat": 10.8,
+    "carb": 8.5
+  },
+  "grilled_cheese_sandwich": {
+    "name_cn": "烤芝士三明治",
+    "name_th": "แซนด์วิชชีสย่าง",
+    "cal": 380,
+    "protein": 12.5,
+    "fat": 22.8,
+    "carb": 32.5
+  },
+  "grilled_salmon": {
+    "name_cn": "烤三文鱼",
+    "name_th": "แซลมอนย่าง",
+    "cal": 280,
+    "protein": 30.5,
+    "fat": 15.2,
+    "carb": 0.8
+  },
+  "guacamole": {
+    "name_cn": "鳄梨酱",
+    "name_th": "กวากาโมเล่",
+    "cal": 150,
+    "protein": 2.5,
+    "fat": 12.8,
+    "carb": 8.5
+  },
+  "gyoza": {
+    "name_cn": "煎饺",
+    "name_th": "เกี๊ยวซ่า",
+    "cal": 200,
+    "protein": 8.2,
+    "fat": 10.5,
+    "carb": 20.8
+  },
+  "hamburger": {
+    "name_cn": "汉堡",
+    "name_th": "แฮมเบอร์เกอร์",
+    "cal": 520,
+    "protein": 25.8,
+    "fat": 28.5,
+    "carb": 38.2
+  },
+  "hot_and_sour_soup": {
+    "name_cn": "酸辣汤",
+    "name_th": "ซุปเปรี้ยวเผ็ด",
+    "cal": 120,
+    "protein": 5.2,
+    "fat": 5.8,
+    "carb": 12.5
+  },
+  "hot_dog": {
+    "name_cn": "热狗",
+    "name_th": "ฮอทด็อก",
+    "cal": 320,
+    "protein": 12.5,
+    "fat": 20.2,
+    "carb": 25.8
+  },
+  "huevos_rancheros": {
+    "name_cn": "墨西哥煎蛋",
+    "name_th": "ฮูเอโวส์แรนเชอโรส",
+    "cal": 380,
+    "protein": 18.5,
+    "fat": 22.8,
+    "carb": 25.2
+  },
+  "hummus": {
+    "name_cn": "鹰嘴豆泥",
+    "name_th": "ฮัมมุส",
+    "cal": 170,
+    "protein": 7.5,
+    "fat": 8.2,
+    "carb": 18.5
+  },
+  "ice_cream": {
+    "name_cn": "冰淇淋",
+    "name_th": "ไอศกรีม",
+    "cal": 200,
+    "protein": 3.5,
+    "fat": 10.2,
+    "carb": 25.8
+  },
+  "lasagna": {
+    "name_cn": "千层面",
+    "name_th": "ลาซานญ่า",
+    "cal": 420,
+    "protein": 22.5,
+    "fat": 20.8,
+    "carb": 35.2
+  },
+  "lobster_bisque": {
+    "name_cn": "龙虾浓汤",
+    "name_th": "ซุปกุ้งมังกร",
+    "cal": 220,
+    "protein": 10.5,
+    "fat": 15.2,
+    "carb": 8.5
+  },
+  "lobster_roll_sandwich": {
+    "name_cn": "龙虾卷",
+    "name_th": "แซนด์วิชกุ้งมังกร",
+    "cal": 450,
+    "protein": 22.8,
+    "fat": 25.2,
+    "carb": 30.5
+  },
+  "macaroni_and_cheese": {
+    "name_cn": "芝士通心粉",
+    "name_th": "มักกะโรนีชีส",
+    "cal": 380,
+    "protein": 12.5,
+    "fat": 18.2,
+    "carb": 40.8
+  },
+  "macarons": {
+    "name_cn": "马卡龙",
+    "name_th": "มาการอง",
+    "cal": 180,
+    "protein": 2.5,
+    "fat": 8.2,
+    "carb": 25.8
+  },
+  "miso_soup": {
+    "name_cn": "味增汤",
+    "name_th": "ซุปมิโซะ",
+    "cal": 80,
+    "protein": 4.2,
+    "fat": 3.5,
+    "carb": 8.5
+  },
+  "mussels": {
+    "name_cn": "贻贝",
+    "name_th": "หอยแมลงภู่",
+    "cal": 150,
+    "protein": 20.5,
+    "fat": 5.2,
+    "carb": 3.8
+  },
+  "nachos": {
+    "name_cn": "玉米片",
+    "name_th": "นาโชส์",
+    "cal": 420,
+    "protein": 8.5,
+    "fat": 22.8,
+    "carb": 45.2
+  },
+  "omelette": {
+    "name_cn": "煎蛋卷",
+    "name_th": "ออเมเล็ต",
+    "cal": 220,
+    "protein": 15.2,
+    "fat": 15.8,
+    "carb": 2.5
+  },
+  "onion_rings": {
+    "name_cn": "洋葱圈",
+    "name_th": "หัวหอมทอด",
+    "cal": 250,
+    "protein": 3.8,
+    "fat": 12.5,
+    "carb": 32.8
+  },
+  "oysters": {
+    "name_cn": "牡蛎",
+    "name_th": "หอยนางรม",
+    "cal": 80,
+    "protein": 9.5,
+    "fat": 2.2,
+    "carb": 3.8
+  },
+  "pad_thai": {
+    "name_cn": "泰式炒河粉",
+    "name_th": "ผัดไทย",
+    "cal": 360,
+    "protein": 11.5,
+    "fat": 12.8,
+    "carb": 52.5
+  },
+  "paella": {
+    "name_cn": "西班牙海鲜饭",
+    "name_th": "เปอเยีย",
+    "cal": 420,
+    "protein": 18.5,
+    "fat": 15.2,
+    "carb": 52.8
+  },
+  "pancakes": {
+    "name_cn": "煎饼",
+    "name_th": "แพนเค้ก",
+    "cal": 280,
+    "protein": 5.8,
+    "fat": 12.5,
+    "carb": 38.2
+  },
+  "panna_cotta": {
+    "name_cn": "意式奶冻",
+    "name_th": "ปันนาโคตต้า",
+    "cal": 220,
+    "protein": 3.5,
+    "fat": 12.8,
+    "carb": 22.5
+  },
+  "peking_duck": {
+    "name_cn": "北京烤鸭",
+    "name_th": "เป็กกิ้งดัก",
+    "cal": 380,
+    "protein": 25.8,
+    "fat": 28.5,
+    "carb": 5.2
+  },
+  "pho": {
+    "name_cn": "越南河粉",
+    "name_th": "เฝอ",
+    "cal": 350,
+    "protein": 18.5,
+    "fat": 12.8,
+    "carb": 42.5
+  },
+  "pizza": {
+    "name_cn": "披萨",
+    "name_th": "พิซซ่า",
+    "cal": 280,
+    "protein": 10.5,
+    "fat": 12.2,
+    "carb": 32.8
+  },
+  "pork_chop": {
+    "name_cn": "猪排",
+    "name_th": "สเต็กหมู",
+    "cal": 320,
+    "protein": 28.5,
+    "fat": 20.2,
+    "carb": 1.5
+  },
+  "poutine": {
+    "name_cn": "肉汁奶酪薯条",
+    "name_th": "พูทีน",
+    "cal": 580,
+    "protein": 15.8,
+    "fat": 32.5,
+    "carb": 55.2
+  },
+  "prime_rib": {
+    "name_cn": "上等肋排",
+    "name_th": "พรายม์ริบ",
+    "cal": 420,
+    "protein": 35.2,
+    "fat": 28.5,
+    "carb": 0.8
+  },
+  "pulled_pork_sandwich": {
+    "name_cn": "手撕猪肉三明治",
+    "name_th": "แซนด์วิชหมูสับ",
+    "cal": 480,
+    "protein": 22.5,
+    "fat": 25.8,
+    "carb": 38.2
+  },
+  "ramen": {
+    "name_cn": "拉面",
+    "name_th": "ราเมน",
+    "cal": 450,
+    "protein": 18.5,
+    "fat": 20.2,
+    "carb": 52.8
+  },
+  "ravioli": {
+    "name_cn": "意大利饺",
+    "name_th": "ราวิโอลี",
+    "cal": 320,
+    "protein": 12.5,
+    "fat": 15.2,
+    "carb": 35.8
+  },
+  "red_velvet_cake": {
+    "name_cn": "红丝绒蛋糕",
+    "name_th": "เค้กเรดเวลเวต",
+    "cal": 350,
+    "protein": 4.8,
+    "fat": 18.5,
+    "carb": 42.2
+  },
+  "risotto": {
+    "name_cn": "意大利烩饭",
+    "name_th": "ริซอตโต้",
+    "cal": 380,
+    "protein": 8.5,
+    "fat": 15.2,
+    "carb": 52.8
+  },
+  "samosa": {
+    "name_cn": "咖喱角",
+    "name_th": "ซาโมซ่า",
+    "cal": 250,
+    "protein": 5.2,
+    "fat": 12.8,
+    "carb": 28.5
+  },
+  "sashimi": {
+    "name_cn": "生鱼片",
+    "name_th": "ซาซิมิ",
+    "cal": 150,
+    "protein": 25.8,
+    "fat": 4.2,
+    "carb": 0.5
+  },
+  "scallops": {
+    "name_cn": "扇贝",
+    "name_th": "หอยเชลล์",
+    "cal": 120,
+    "protein": 20.5,
+    "fat": 2.8,
+    "carb": 2.5
+  },
+  "seaweed_salad": {
+    "name_cn": "海藻沙拉",
+    "name_th": "สลัดสาหร่าย",
+    "cal": 80,
+    "protein": 2.5,
+    "fat": 3.2,
+    "carb": 10.8
+  },
+  "shrimp_and_grits": {
+    "name_cn": "虾仁玉米粥",
+    "name_th": "กุ้งกับกริทส์",
+    "cal": 320,
+    "protein": 18.5,
+    "fat": 15.2,
+    "carb": 28.5
+  },
+  "spaghetti_bolognese": {
+    "name_cn": "意大利肉酱面",
+    "name_th": "สปาเก็ตตี้โบโลเนส",
+    "cal": 420,
+    "protein": 20.5,
+    "fat": 18.2,
+    "carb": 45.8
+  },
+  "spaghetti_carbonara": {
+    "name_cn": "意大利培根蛋面",
+    "name_th": "สปาเก็ตตี้คาร์โบนารา",
+    "cal": 450,
+    "protein": 18.5,
+    "fat": 22.8,
+    "carb": 42.5
+  },
+  "spring_rolls": {
+    "name_cn": "春卷",
+    "name_th": "ปอเปี๊ยะ",
+    "cal": 180,
+    "protein": 5.2,
+    "fat": 10.5,
+    "carb": 18.8
+  },
+  "steak": {
+    "name_cn": "牛排",
+    "name_th": "สเต็ก",
+    "cal": 320,
+    "protein": 30.5,
+    "fat": 20.2,
+    "carb": 0.8
+  },
+  "strawberry_shortcake": {
+    "name_cn": "草莓酥饼",
+    "name_th": "เค้กสตรอเบอร์รี่",
+    "cal": 280,
+    "protein": 4.5,
+    "fat": 12.8,
+    "carb": 38.2
+  },
+  "sushi": {
+    "name_cn": "寿司",
+    "name_th": "ซูชิ",
+    "cal": 220,
+    "protein": 8.5,
+    "fat": 4.2,
+    "carb": 35.8
+  },
+  "tacos": {
+    "name_cn": "墨西哥玉米卷",
+    "name_th": "ทาโก้",
+    "cal": 280,
+    "protein": 12.5,
+    "fat": 15.2,
+    "carb": 25.8
+  },
+  "takoyaki": {
+    "name_cn": "章鱼小丸子",
+    "name_th": "ทาโกะยากิ",
+    "cal": 220,
+    "protein": 6.5,
+    "fat": 10.2,
+    "carb": 25.8
+  },
+  "tiramisu": {
+    "name_cn": "提拉米苏",
+    "name_th": "ทิรามิสุ",
+    "cal": 320,
+    "protein": 5.8,
+    "fat": 18.5,
+    "carb": 32.8
+  },
+  "tuna_tartare": {
+    "name_cn": "金枪鱼鞑靼",
+    "name_th": "ทูน่าทาร์ตาร์",
+    "cal": 180,
+    "protein": 22.5,
+    "fat": 8.2,
+    "carb": 2.5
+  },
+  "waffles": {
+    "name_cn": "华夫饼",
+    "name_th": "วาฟเฟิล",
+    "cal": 320,
+    "protein": 6.5,
+    "fat": 15.2,
+    "carb": 42.8
+  }
+}
