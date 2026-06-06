@@ -32,7 +32,7 @@ h1 {
     text-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
 }
 
-/* 卡片容器样式 */
+/* 卡片容器样式（就是你看到的白框） */
 .card {
     background: white;
     border-radius: 16px;
@@ -42,11 +42,12 @@ h1 {
     border: 1px solid #f0e6d6;
 }
 
-/* 子标题样式 */
+/* 子标题样式（个人信息、生成结果） */
 h2, h3 {
     color: #e67e22 !important;
     font-weight: 600 !important;
     margin-bottom: 1.5rem !important;
+    margin-top: 0 !important; /* 去掉标题顶部的默认间距 */
 }
 
 /* 输入框样式 */
@@ -352,7 +353,7 @@ if not cn_dishes or not thai_dishes:
     st.error(t["file_error"])
     st.stop()
 
-# ===================== 先创建标签页，再使用它们！这行代码必须在所有with tab1:之前 =====================
+# ===================== 先创建标签页，再使用它们 =====================
 tab1, tab2 = st.tabs(["🍜 智能配餐", "📷 本地AI菜品识别"])
 
 # ===================== 标签页1：智能配餐功能 =====================
@@ -360,10 +361,13 @@ with tab1:
     col1, col2 = st.columns([1, 2])
     
     with col1:
-        # 先打开卡片，再放标题（标题在白框里面）
+        # ✅ 第一步：先打开左边的白框
         st.markdown('<div class="card">', unsafe_allow_html=True)
+        
+        # ✅ 第二步：在白框里面写"个人信息"标题
         st.subheader("个人信息")
         
+        # ✅ 第三步：在白框里面写所有输入内容
         height = st.number_input(t["height"], min_value=100, max_value=220, value=161)
         weight = st.number_input(t["weight"], min_value=30, max_value=150, value=45)
         age = st.number_input(t["age"], min_value=10, max_value=100, value=20)
@@ -511,18 +515,23 @@ with tab1:
                 st.session_state["result"] = res
                 st.rerun()
         
+        # ✅ 第四步：关闭左边的白框
         st.markdown('</div>', unsafe_allow_html=True)
 
     with col2:
-        # 先打开卡片，再放标题（标题在白框里面）
+        # ✅ 第一步：先打开右边的白框
         st.markdown('<div class="card">', unsafe_allow_html=True)
+        
+        # ✅ 第二步：在白框里面写"生成结果"标题
         st.subheader(t["result"])
         
+        # ✅ 第三步：在白框里面写结果内容
         if "result" in st.session_state:
             st.markdown(st.session_state["result"])
         else:
             st.info("👈 请在左侧填写个人信息，然后点击「一键生成配餐方案」")
         
+        # ✅ 第四步：关闭右边的白框
         st.markdown('</div>', unsafe_allow_html=True)
 
 # ===================== 标签页2：本地AI菜品识别功能 =====================
