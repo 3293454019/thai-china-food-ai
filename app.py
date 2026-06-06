@@ -53,7 +53,7 @@ trans = {
         "carbohydrate": "碳水化合物",
         "confidence": "置信度",
         "no_result": "未识别到菜品，请上传清晰的菜品图片",
-        "model_error": "模型加载失败，请确保yolov8n.pt在同一目录"
+        "model_error": "模型加载失败，请确保网络连接正常"
     },
     "ภาษาไทย": {
         "title": "ระบบ AI สร้างเมนูอาหารและวัฒนธรรมอาหารจีน-ไทย",
@@ -100,17 +100,19 @@ trans = {
         "carbohydrate": "คาร์โบไฮเดรต",
         "confidence": "ความมั่นใจ",
         "no_result": "ไม่พบอาหาร กรุณาอัปโหลดรูปภาพอาหารที่ชัดเจน",
-        "model_error": "โหลดโมเดลล้มเหลว กรุณาตรวจสอบไฟล์ yolov8n.pt"
+        "model_error": "โหลดโมเดลล้มเหลว กรุณาตรวจสอบการเชื่อมต่อเครือข่าย"
     }
 }
 
-# 加载本地YOLO菜品识别模型（自动下载，无需手动上传）
+# 加载专门的菜品识别模型（自动下载，无需手动上传）
 @st.cache_resource
 def load_yolo_model():
     try:
-        # 自动从官方下载yolov8n.pt模型，下载后自动缓存
-        return YOLO("yolov8n.pt")
-    except:
+        # 自动下载专门在Food101数据集上训练的菜品识别模型
+        # 模型大小约6MB，下载后自动缓存
+        return YOLO("keremberke/yolov8n-food-classification")
+    except Exception as e:
+        st.error(f"模型加载失败：{str(e)}")
         return None
 
 # 加载营养数据库
@@ -124,21 +126,25 @@ def load_nutrition_db():
     except:
         return {}
 
-# 本地菜品识别函数
+# 本地菜品识别函数（适配分类模型）
 def recognize_dish_local(image, model, nutrition_db, lang):
     results = model(image, conf=0.3)  # 置信度阈值0.3
     recognized_dishes = []
     
     for result in results:
-        for box in result.boxes:
-            class_id = int(box.cls[0])
+        # 分类模型的输出格式
+        top5_indices = result.probs.top5
+        top5_confidences = result.probs.top5conf
+        
+        for i in range(3):  # 返回前3个最可能的结果
+            class_id = int(top5_indices[i])
             class_name = model.names[class_id]
-            confidence = float(box.conf[0])
+            confidence = float(top5_confidences[i])
             
             # 从营养数据库获取信息
             if class_name in nutrition_db:
                 dish_info = nutrition_db[class_name]
-                name = dish_info[f"name_{lang}"] if f"name_{lang}" in dish_info else class_name
+                name = dish_info[f"name_{lang}"] if f"name_{lang}" in dish_info else class_name.replace("_", " ").title()
                 recognized_dishes.append({
                     "name": name,
                     "cal": dish_info["cal"],
@@ -148,8 +154,7 @@ def recognize_dish_local(image, model, nutrition_db, lang):
                     "confidence": confidence
                 })
     
-    # 按置信度排序，返回前3个
-    return sorted(recognized_dishes, key=lambda x: x["confidence"], reverse=True)[:3]
+    return recognized_dishes
 
 # 读取JSON菜品文件函数
 @st.cache_data(show_spinner=False)
