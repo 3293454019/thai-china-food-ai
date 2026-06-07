@@ -14,7 +14,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# 美化CSS样式
+# 美化CSS样式（已删除.card相关代码）
 st.markdown("""
 <style>
 /* 全局背景和字体 */
@@ -30,16 +30,6 @@ h1 {
     text-align: center !important;
     margin-bottom: 2rem !important;
     text-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
-}
-
-/* 卡片容器样式（就是你看到的白框） */
-.card {
-    background: white;
-    border-radius: 16px;
-    padding: 2rem;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-    margin-bottom: 1.5rem;
-    border: 1px solid #f0e6d6;
 }
 
 /* 子标题样式（个人信息、生成结果） */
@@ -356,18 +346,14 @@ if not cn_dishes or not thai_dishes:
 # ===================== 先创建标签页，再使用它们 =====================
 tab1, tab2 = st.tabs(["🍜 智能配餐", "📷 本地AI菜品识别"])
 
-# ===================== 标签页1：智能配餐功能 =====================
+# ===================== 标签页1：智能配餐功能（已删除白框） =====================
 with tab1:
     col1, col2 = st.columns([1, 2])
     
     with col1:
-        # ✅ 第一步：先打开左边的白框
-        st.markdown('<div class="card">', unsafe_allow_html=True)
-        
-        # ✅ 第二步：在白框里面写"个人信息"标题
+        # 直接显示标题和内容，没有白框
         st.subheader("个人信息")
         
-        # ✅ 第三步：在白框里面写所有输入内容
         height = st.number_input(t["height"], min_value=100, max_value=220, value=161)
         weight = st.number_input(t["weight"], min_value=30, max_value=150, value=45)
         age = st.number_input(t["age"], min_value=10, max_value=100, value=20)
@@ -514,29 +500,18 @@ with tab1:
                 
                 st.session_state["result"] = res
                 st.rerun()
-        
-        # ✅ 第四步：关闭左边的白框
-        st.markdown('</div>', unsafe_allow_html=True)
 
     with col2:
-        # ✅ 第一步：先打开右边的白框
-        st.markdown('<div class="card">', unsafe_allow_html=True)
-        
-        # ✅ 第二步：在白框里面写"生成结果"标题
+        # 直接显示标题和结果，没有白框
         st.subheader(t["result"])
         
-        # ✅ 第三步：在白框里面写结果内容
         if "result" in st.session_state:
             st.markdown(st.session_state["result"])
         else:
             st.info("👈 请在左侧填写个人信息，然后点击「一键生成配餐方案」")
-        
-        # ✅ 第四步：关闭右边的白框
-        st.markdown('</div>', unsafe_allow_html=True)
 
-# ===================== 标签页2：本地AI菜品识别功能 =====================
+# ===================== 标签页2：本地AI菜品识别功能（已删除白框） =====================
 with tab2:
-    st.markdown('<div class="card">', unsafe_allow_html=True)
     st.subheader(t["recognition"])
     
     if not yolo_model:
@@ -576,5 +551,3 @@ with tab2:
                         st.error(t["no_result"])
         else:
             st.info(t["upload_image"] + " 或 " + t["take_photo"])
-    
-    st.markdown('</div>', unsafe_allow_html=True)
